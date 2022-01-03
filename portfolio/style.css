@@ -205,6 +205,18 @@ ul {
     text-align: center;
 }
 
+.section-title-video {
+    width: 154px;
+    height: 80px;
+    font: var(--font-merriweather);
+    color: var(--gold);
+    line-height: 80px;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--bg-dark);
+    text-align: center;  
+}
+
 .skill-items {
     display: flex;
     justify-content: space-between;
@@ -297,3 +309,59 @@ ul {
     width: 450px;
     height: 560px;
 }
+
+.portfolio-image:nth-child(1) {
+    background: url(assets/img/portfolio-img-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.portfolio-image:nth-child(2) {
+    background: url(assets/img/portfolio-img-2.jpg);
+    background-repeat: no-repeat;
+}
+
+.portfolio-image:nth-child(3) {
+    background: url(assets/img/portfolio-img-3.jpg);
+    background-repeat: no-repeat;
+}
+
+.portfolio-image:nth-child(4) {
+    background: url(assets/img/portfolio-img-4.jpg);
+    background-repeat: no-repeat;
+}
+
+.portfolio-image:nth-child(5) {
+    background: url(assets/img/portfolio-img-5.jpg);
+    background-repeat: no-repeat;
+}
+
+.portfolio-image:nth-child(6) {
+    background: url(assets/img/portfolio-img-6.jpg);
+    background-repeat: no-repeat;
+}
+
+.video-container {
+    background-color: var(--bg-dark);
+    padding-top: 100px
+}
+
+.video-player {
+    padding: 60px 20px 0;
+    height: 705px;
+    background: url(assets/img/video-player.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button {
+    background: url(assets/svg/Play_hover.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+}   
