@@ -4,7 +4,7 @@
     --bg-dark: #000000;
     --gold: #BDAE82;
     --white: #FFFFFF;
-    --font-merriweather: bold 60px Merriweather;
+    --font-merriweather: bold 40px Merriweather;
     --font-inter: 20px Inter;
     --font-inter-bold: bold 20px Inter;
 }
@@ -14,7 +14,7 @@ html {
 }
 
 .container {
-    max-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -79,8 +79,8 @@ ul {
     background-image: url('./assets/img/bg.jpg');
     background-repeat: no-repeat;
     background-position: center -90px;
-    height: 820px;
-    padding: 180px 0 0 92px;
+    height: 660px;
+    padding: 160px 0 0 80px;
     
 }
 
@@ -145,4 +145,98 @@ ul {
     color: var(--gold);
 }
 
+.skills-container {
+    height: 382px;
+    background-color: var(--bg-dark);
+    padding-top: 100px;
+   
+}
+
+.section-title-container {
+    width: 50%;
+    margin: 0 auto;
+    background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+    
+    
+    
+}
+.section-title {
+    width: 152px;
+    height: 80px;
+    font: var(--font-merriweather);
+    color: var(--gold);
+    line-height: 80px;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--bg-dark);
+    text-align: center;
+}
+
+.skill-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1400px;
+    height: 242;
+    margin: 60px auto 0;
+    
+}
+
+.skill-item {
+    width: 320px;
+    height: 240px;
+}
+
+.skills-image-one {
+    background-image: url(assets/svg/camera\ 1.svg);
+    background-size: 62px 50px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.skills-image-two {
+    background-image: url(assets/svg/video\ 1.svg);
+    background-size: 60px 50px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.skills-image-three {
+    background-image: url(assets/svg/image\ 1.svg);
+    background-size: 66px 50px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.skills-image-four {
+    background-image: url(assets/svg/mic\ 1.svg);
+    background-size: 32px 50px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.skills-image {
+    height: 50px;
+}
+
+.skills-title {
+    font:var(--font-inter-bold);
+    color: var(--white);
+    line-height: 40px;
+    text-align: center;
+    width: 280px;
+    height: 40px;
+    margin:  50px auto 20px;
+}
+
+.skills-text {
+    font: var(--font-inter);
+    font-size: 18px;
+    color: var(--white);
+    line-height: 36px;
+    text-align: center;
+    width: 280px;
+    height: 72px;
+    margin: 0 auto 8px;
+    
+}
 
