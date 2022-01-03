@@ -91,11 +91,13 @@ ul {
 
 .hero-container-title {
     font: var(--font-merriweather);
+    font-size: 60px;
     line-height: 120px;
     color: var(--white);
     width: 500px;
     height: 120px;
-    margin: 0 0 10px 0;
+    margin: 0;
+
 }
 
 .hero-container-text {
@@ -104,7 +106,9 @@ ul {
     line-height: 40px;
     width: 470px;
     height: 120px;
-    margin: 0 30px 0 0;
+    padding-top: 10px;
+    padding-right: 30px;
+    margin: 0;
 
 }
 .button-one {
@@ -121,6 +125,23 @@ ul {
 
 .button-one:hover {
     color:var(--white);
+}
+
+.button-two {
+    width: 220px;
+    height: 55px;
+    background-color: var(--bg-dark);
+    border: 2px solid var(--gold);
+    box-sizing: border-box;
+    font: var(--font-inter);
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--gold);
+}
+
+.button-two:hover {
+    color: var(--white);
 }
 
 .button-container {
@@ -156,12 +177,24 @@ ul {
     width: 50%;
     margin: 0 auto;
     background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
-    
+    overflow: hidden;
     
     
 }
-.section-title {
+.section-title-skills {
     width: 152px;
+    height: 80px;
+    font: var(--font-merriweather);
+    color: var(--gold);
+    line-height: 80px;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--bg-dark);
+    text-align: center;
+}
+
+.section-title-portfolio {
+    width: 220px;
     height: 80px;
     font: var(--font-merriweather);
     color: var(--gold);
@@ -178,7 +211,7 @@ ul {
     flex-wrap: wrap;
     width: 1400px;
     height: 242;
-    margin: 60px auto 0;
+    padding: 60px 20px 0;
     
 }
 
@@ -225,7 +258,7 @@ ul {
     text-align: center;
     width: 280px;
     height: 40px;
-    margin:  50px auto 20px;
+    padding:  50px 20px 0;
 }
 
 .skills-text {
@@ -236,7 +269,31 @@ ul {
     text-align: center;
     width: 280px;
     height: 72px;
-    margin: 0 auto 8px;
+    padding: 20px 20px 8px;
     
 }
 
+.portfolio-container {
+    background-color: var(--bg-dark);
+    padding-top: 100px;
+}
+
+.portfolio-buttons {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap:5px;
+}
+
+.portfolio-images {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 20px 0;
+    gap: 25px;
+    
+}
+
+.portfolio-image {
+    width: 450px;
+    height: 560px;
+}
