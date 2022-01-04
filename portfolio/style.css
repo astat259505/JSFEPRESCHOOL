@@ -377,6 +377,10 @@ ul {
     height: 130px;
 }   
 
+.play-button:hover {
+    filter: invert(24%) sepia(35%) saturate(290%) hue-rotate(7deg) brightness(87%) contrast(87%);
+}
+
 
 .price-container {
     padding-top: 100px;
@@ -431,4 +435,75 @@ ul {
 .price-button {
     display: block;
     padding: 40px 115px 43px;
+}
+
+.contact-container {
+    height: 445px;
+    background: url(assets/img/contacts.jpg);
+    background-size: auto 700px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 60px 20px 195px 970px;
+}   
+
+.input-forms-container {
+    
+}
+
+.contacts-title {
+    font: var(--font-merriweather);
+    font-size: 40px;
+    line-height: 80px;
+    color: var(--gold);
+    margin: 0;
+    height: 80px;
+    padding-bottom: 20px;
+}
+
+.input-form {
+    display: block;
+    height: 50px;
+    width: 450px;
+    box-sizing: border-box;
+    border: 2px solid var(--gold);
+    border-radius: 0;
+    background-color: transparent;
+    font: var(--font-inter);
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--gold);
+}
+
+
+::placeholder {
+    font: var(--font-inter);
+    font-size: 20px;
+    line-height: 40px;
+    color:var(--gold);
+    padding: 5px 0 0 20px;
+}
+
+
+
+.textarea {
+    box-sizing: border-box;
+    border: 2px solid var(--gold);
+    border-radius: 0;
+    background-color: transparent;
+    resize: none;
+    width: 450px;
+    height: 100px;
+    font: var(--font-inter);
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--gold);
+    
+}
+
+.input-form-container {
+    padding-top: 20px;
+}
+
+.textarea-container {
+    padding: 20px 0 30px;
 }
