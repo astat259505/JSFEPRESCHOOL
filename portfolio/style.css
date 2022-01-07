@@ -64,13 +64,13 @@ ul {
 
 .header-logo {
     background-image: url('./assets/svg/header-logo.svg');
-    background-size: contain;
     background-repeat: no-repeat;
     transition: 0.3s;
     background-position: 0 3px;
-    width: 50px;
-    height: 50px;
-    margin: 20px auto 20px 20px;
+    width: 60px;
+    height: 60px;
+    margin: 25px auto 20px 15px;
+    
 
 }
 
@@ -178,7 +178,7 @@ ul {
 }
 
 .section-title-container {
-    width: 50%;
+    width: 700px;
     margin: 0 auto;
     background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
     overflow: hidden;
@@ -467,12 +467,12 @@ ul {
 
 .input-form {
     display: block;
+    box-sizing: border-box;
     height: 50px;
     width: 450px;
-    box-sizing: border-box;
     border: 2px solid var(--gold);
     border-radius: 0;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
     font: var(--font-inter);
     font-size: 20px;
     line-height: 40px;
@@ -485,7 +485,7 @@ ul {
     font-size: 20px;
     line-height: 40px;
     color:var(--gold);
-    padding: 5px 0 0 20px;
+    padding: 5px 0 5px 20px;
 }
 
 
@@ -494,7 +494,7 @@ ul {
     box-sizing: border-box;
     border: 2px solid var(--gold);
     border-radius: 0;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);;
     resize: none;
     width: 450px;
     height: 100px;
