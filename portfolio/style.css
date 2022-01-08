@@ -598,7 +598,7 @@ ul {
     display: block;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1400px) {
     .container {
         width: 768px;
         padding: 0;
@@ -608,6 +608,7 @@ ul {
 
     :root {
         --font-merriweather: 32px Merriweather;
+        --font-inter: 18px Inter;
     }
 
     .header-container {
@@ -626,6 +627,7 @@ ul {
     }
 
     .hero-container-title {
+        font-family: Merriweather;
         font-size: 32px;
         line-height: 64px;
         height: 64px;
@@ -637,21 +639,38 @@ ul {
     }
 
     .hero-container-text{
-        padding: 20px 0 60px 0;
+        padding: 20px 318px 60px 0;
+        height: 72px;
+        width: 390px;
+        line-height: 24.2px;
+        font-weight: 400;
+        font: 20px Inter;
     }
 
     .button-one {
         height: 54px;
         width: 219px;
+        font: 20px Inter;
+        line-height: 40px;
     }
     .skills-container {
+        box-sizing: border-box;
         width: 768px;
         height: 729px;
+        padding: 95px 20px 13px;
     }
 
     .skill-items {
-        width: 768px;
+        box-sizing: border-box;
+        width: 728px;
+        height: 556px;
+        padding: 9px 44px 27px 40px;
+        margin-top: 36px;
+        overflow: hidden;
         flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-between;
+        
     }
 
     .portfolio-container {
@@ -659,10 +678,53 @@ ul {
         height: 3870px;
     }
 
-}   .main-container {
+  .main-container {
     overflow: visible;
 }
 
 .portfolio-images {
     justify-content: center;
 }
+
+.section-title-container {
+    width: 364px;
+    background-image: linear-gradient(to top, #000 24px, #bdae82 24px, #bdae82 26px, #000 26px);
+    
+}
+
+.section-title-skills {
+    font: var(--font-merriweather);
+    line-height: 40.22px;
+    font-size: 32px;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 131px;
+    height: 50px;
+    padding: 5px 20px;
+}
+
+.skill-item {
+    width: 300px;
+    height: 224px;
+}
+
+.skills-image-one {
+    padding: 0 119px;
+}
+
+.skills-image-two{
+    padding: 0 120px ;
+}
+ .skills-title {
+     padding: 30px 10px 20px;
+ }
+
+ .skills-text {
+     padding: 0 10px 40px;
+     line-height: 21.78px;
+ }
+
+
+
+
+} 
