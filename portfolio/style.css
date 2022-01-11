@@ -674,7 +674,7 @@ ul {
 
     .portfolio-container {
         width: 768px;
-        height: 3870px;
+        height: 3790px;
         padding-top: 80px;
     }
 
@@ -746,7 +746,34 @@ ul {
  }
 
  .video-container {
-     
+    padding-top: 80px;
+    height: 548px;
+ }
+
+ .section-title-video {
+    font: var(--font-merriweather);
+    line-height: 80px;
+    font-size: 32px;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 131px;
+    height: 80px;
+    padding: 0 20px;
+ }
+
+ .video-player {
+     box-sizing: border-box;
+     height: 468px;
+     padding: 50px 0 0 0;
+     background-image: url(assets/img/video-player-tablet.jpg);   
+
+ }
+
+ .play-button {
+     width: 65px;
+     height: 65px;
+     background-size: contain;
+
  }
 
 } 
