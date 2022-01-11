@@ -657,7 +657,7 @@ ul {
         box-sizing: border-box;
         width: 768px;
         height: 729px;
-        padding: 95px 20px 13px;
+        padding: 80px 20px 13px;
     }
 
     .skill-items {
@@ -665,22 +665,30 @@ ul {
         width: 728px;
         height: 556px;
         padding: 9px 44px 27px 40px;
-        margin-top: 36px;
-        overflow: hidden;
         flex-wrap: wrap;
-        align-content: space-around;
         justify-content: space-between;
+        align-content: flex-end;
+        row-gap: 36px;
         
     }
 
     .portfolio-container {
         width: 768px;
         height: 3870px;
+        padding-top: 80px;
     }
 
-  .main-container {
-    overflow: visible;
-}
+    .section-title-portfolio {
+        font: var(--font-merriweather);
+        line-height: 80px;
+        font-size: 32px;
+        font-weight: bold;
+        box-sizing: border-box;
+        width: 185px;
+        height: 80px;
+        padding: 0 20px;
+        
+    }
 
 .portfolio-images {
     justify-content: center;
@@ -688,7 +696,8 @@ ul {
 
 .section-title-container {
     width: 364px;
-    background-image: linear-gradient(to top, #000 24px, #bdae82 24px, #bdae82 26px, #000 26px);
+    background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+    overflow: hidden;
     
 }
 
@@ -699,8 +708,8 @@ ul {
     font-weight: bold;
     box-sizing: border-box;
     width: 131px;
-    height: 50px;
-    padding: 5px 20px;
+    height: 80px;
+    padding: 20px 20px;
 }
 
 .skill-item {
@@ -724,7 +733,20 @@ ul {
      line-height: 21.78px;
  }
 
+ .portfolio-buttons {
+    width: 445px;
+    height: 115px;   
+    padding: 50px 161px 60px 162px;
+    flex-wrap: wrap;
 
+ }
 
+ .portfolio-images {
+     padding-top: 0;
+ }
+
+ .video-container {
+     
+ }
 
 } 
