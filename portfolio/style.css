@@ -30,6 +30,22 @@ html {
     align-items: center;
     height: 90px;
 }
+.hamburger {
+    width: 50px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 11px 0;
+    display: none;
+    
+}
+
+.line {
+    width: 50px;
+    height: 3px;
+    background-color: var(--white);
+}   
 
 .nav-list {
     list-style: none;
@@ -614,9 +630,12 @@ ul {
     }
 
     .header-container {
+        box-sizing: border-box;
         width: 768px;
-        padding: 0;
+        height: 90px;
+        padding: 20px 64px 20px 60px;
         background-image: url(assets/img/hero-tablet.jpg);
+        align-items: center;
         
     
     }
@@ -886,4 +905,40 @@ ul {
     padding: 0;
     justify-content: space-between;
 }
+
+.hamburger {
+    display: flex;
+}
+
+.nav {
+    display: none;
+}
+
+.header-logo {
+    margin-left: 0;
+}
+
+.english {
+    width: 25px;
+    padding-left: 19px;
+}
+
+.russian {
+    width: 22px;
+}
+
+.slash {
+    width: 10px;
+    padding-right: 2px;
+}
+
+.language-switch {
+    width: 102px;
+}
+
+
+
+
+
+
 } 
