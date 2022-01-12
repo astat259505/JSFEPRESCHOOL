@@ -385,6 +385,8 @@ ul {
     width: 130px;
     height: 130px;
     transition: 0.3s;
+    border: 0px;
+    cursor: pointer;
 }   
 
 .play-button:hover {
@@ -851,7 +853,37 @@ ul {
     top: -2px;
 }
 
+.footer-container {
+    width: 768px;
+    height: 134px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 279px;
+}
 
+.footer-item {
+    font-size: 20px;
+    line-height: 24.2px;
+}
 
+.rsschool {
+    width: 210px;
+}
 
+.footer-data {
+    width: 210px;
+    height: 24px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.copyright {
+    width: 24px;
+}
+
+.footer-links {
+    padding: 0;
+    justify-content: space-between;
+}
 } 
