@@ -37,9 +37,13 @@ html {
     flex-direction: column;
     justify-content: space-between;
     padding: 11px 0;
+    cursor: pointer;
+    transition: 0.3s;
     display: none;
     
 }
+
+
 
 .line {
     width: 50px;
@@ -621,8 +625,9 @@ ul {
         width: 768px;
         padding: 0;
         
-        
+    
     }
+
 
     :root {
         --font-merriweather: 32px Merriweather;
@@ -911,7 +916,38 @@ ul {
 }
 
 .nav {
-    display: none;
+    box-sizing: border-box;
+    width: 620px;
+    height: 1024px;
+    position: absolute;
+    z-index: 2;
+    background-color: var(--bg-dark);
+    right: -620px;
+    top: 0px;
+    
+   
+}
+
+.nav-list {
+    width: 150px;
+    height: 429px;
+    flex-direction: column;
+    margin: 134px 343px 461px 127px;
+    justify-content: start;
+    gap: 16px;
+}
+
+.nav-item {
+    width: 150px;
+    height: 73px;
+    text-align: left;
+}
+.nav-link {
+    font-size: 35px;
+    line-height: 72.55px;
+    width: 150px;
+    height: 73px;
+    text-align: left;
 }
 
 .header-logo {
