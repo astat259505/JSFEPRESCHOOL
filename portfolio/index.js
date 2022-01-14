@@ -20,3 +20,5 @@ const closeMenu = (event) => {
 }
 
 nav.addEventListener ('click', closeMenu);
+
+

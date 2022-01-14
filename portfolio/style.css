@@ -37,19 +37,27 @@ html {
     flex-direction: column;
     justify-content: space-between;
     padding: 11px 0;
-    cursor: pointer;
     transition: 0.3s;
+    cursor: pointer;
+    z-index: 3;
     display: none;
     
+    
 }
-
 
 
 .line {
     width: 50px;
     height: 3px;
     background-color: var(--white);
+    
 }   
+
+
+.hamburger:hover .line {
+    background-color: var(--gold);
+    transition: 0.3s;
+}
 
 .nav-list {
     list-style: none;
@@ -641,7 +649,7 @@ ul {
         box-sizing: border-box;
         width: 768px;
         height: 90px;
-        padding: 20px 64px 20px 60px;
+        padding: 20px 66px 20px 55px;
         background-image: url(assets/img/hero-tablet.jpg);
         align-items: center;
         
@@ -724,18 +732,18 @@ ul {
         
     }
 
-.portfolio-images {
+    .portfolio-images {
     justify-content: center;
-}
+    }
 
-.section-title-container {
+    .section-title-container {
     width: 364px;
     background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
     overflow: hidden;
     
-}
+    }
 
-.section-title-skills {
+    .section-title-skills {
     font: var(--font-merriweather);
     line-height: 40.22px;
     font-size: 32px;
@@ -744,23 +752,23 @@ ul {
     width: 131px;
     height: 80px;
     padding: 20px 20px;
-}
+    }
 
-.skill-item {
+    .skill-item {
     width: 300px;
     height: 224px;
-}
+    }
 
-.skills-image-one {
+    .skills-image-one {
     padding: 0 119px;
-}
+    }
 
-.skills-image-two{
+    .skills-image-two{
     padding: 0 120px ;
-}
- .skills-title {
+    }
+    .skills-title {
      padding: 30px 10px 20px;
- }
+    }
 
  .skills-text {
      padding: 0 10px 40px;
@@ -906,6 +914,7 @@ ul {
     height: 24px;
     font-size: 20px;
     line-height: 24px;
+    padding-left: 30px;
 }
 
 .copyright {
@@ -920,6 +929,26 @@ ul {
 .hamburger {
     display: flex;
 }
+.hamburger.open {
+    padding: 0;
+}
+
+.hamburger.open .line1 { 
+    transform: rotate(45deg) translate(8px, 10px);
+}
+
+.hamburger.open .line2 {
+    opacity: 0;
+}
+
+.hamburger.open .line3 {
+    transform: rotate(-45deg) translate(8px, -10px);
+}
+
+.hamburger.open .line {
+    width: 60px;
+    transition: all 0.3s ease-in-out;
+}
 
 .nav {
     box-sizing: border-box;
@@ -930,13 +959,15 @@ ul {
     background-color: var(--bg-dark);
     right: -620px;
     top: 0px;
-    
 }
 
  .open {
      right: 0px;
      transition: 0.5s;
+     box-shadow: -200px 0 1px 0 rgba(0, 0, 0, 0.5);
  }
+
+ 
 
 .nav-list {
     width: 150px;
