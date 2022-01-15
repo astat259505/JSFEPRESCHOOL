@@ -1012,10 +1012,222 @@ ul {
 .language-switch {
     width: 102px;
 }
-
-
-
-
-
-
 } 
+
+@media (min-width: 620px) and (max-width: 767px) {
+    .container {
+        width: 620px;
+    }
+
+    .skills-container {
+        width: 620px;
+        padding: 80px 0 13px;
+    }
+    
+    .skill-items {
+        width: 620px;
+        padding: 0;
+        justify-content: start;
+    }
+
+    .portfolio-container {
+        width: 620px;
+    }
+
+    .portfolio-buttons {
+        padding: 50px 68px 60px 86px;
+    }
+
+    .video-container {
+        width: 620px;
+    }
+
+    .price-container {
+        width: 620px;
+        
+    }
+
+    .price-items {
+        width: 620px;
+        padding: 50px 0 80px 97px;
+    }
+
+    .contact-container {
+        width: 620px;
+        height: 491px;
+        padding: 20px 82px 111px;
+    }
+
+    .footer-container {
+        width: 620px;
+        padding: 28px 0;
+    }
+
+
+}
+
+
+@media (max-width: 619px) {
+
+    :root {
+        --font-merriweather: 28px Merriweather;
+        --font-inter: 12px Inter;
+    }
+    .container {
+        width: 480px;
+    }
+
+    .header-container {
+        width: 480px;
+        background-position: -250px 0;
+        justify-content: space-between;
+
+        
+    }
+
+    .header-logo {
+        margin-right: 0;
+    }
+
+    .hero-container {
+        width: 450px;
+        background-position: -250px -90px;
+        height: 380px;
+        padding: 120px 0 0 30px;
+    }
+
+    .hero-content {
+        width: 450px;
+    }
+
+    .hero-container-title {
+        width: 450px;
+        
+    }
+
+    .hero-container-text {
+        padding: 20px 0 35px 0;
+
+    }
+
+    .skills-container {
+        width: 480px;
+        height: auto;
+        padding: 40px 0 13px;
+    }
+    
+    .skill-items {
+        width: 480px;
+        height: auto;
+        padding: 0;
+        row-gap: 5px;
+        align-content: flex-start;
+
+    }
+
+    .skill-item {
+        width: 240px;
+    }
+
+    .skills-title {
+        width: 240px;
+        padding: 20px 0 20px;
+    }
+
+    .skills-text {
+        width: 200px;
+        padding: 0 20px;
+    }
+
+    .portfolio-container {
+        width: 480px;
+        height: auto;
+        padding-top: 40px;
+    }
+
+    .portfolio-buttons {
+        padding: 25px 16px 40px 18px;
+    }
+
+    .video-container {
+        width: 480px;
+        height: auto;
+        padding-top: 40px;
+    }
+
+    .video-player {
+        box-sizing: content-box;
+       height: calc(468px * 0.77);
+       padding-top: 35px;
+       background-position: center 35px;
+    }
+
+    .price-container {
+        width: 480px;
+        height: auto;
+        padding-top: 40px;
+    }
+
+    .price-items {
+        box-sizing: border-box;
+        width: 480px;
+        padding: 20px 30px 40px;
+        row-gap: 30px;
+        height: auto;
+    }
+
+    .contact-container {
+        width: 480px;
+        background-size: 140%;
+        padding: 30px 15px 30px;
+        height: 525px;
+        
+    }
+
+    .footer-container {
+        width: 480px;
+        padding: 28px 33px;
+        
+    }
+
+    .nav {
+        box-sizing: border-box;
+        width: 620px;
+        height: 1024px;
+        position: absolute;
+        z-index: 2;
+        background-color: var(--bg-dark);
+        right: -620px;
+        top: 0px;
+    }
+    
+     .open {
+         right: 0px;
+         transition: 0.5s;
+         box-shadow: -200px 0 1px 0 rgba(0, 0, 0, 0.5);
+     }
+    
+     
+    
+    .nav-list {
+        width: 150px;
+        height: 429px;
+        flex-direction: column;
+        margin: 134px 343px 461px 200px;
+        justify-content: start;
+        gap: 16px;
+    }
+    
+    .nav-item {
+        width: 150px;
+        height: 73px;
+        text-align: left;
+    }
+    .nav-link {
+        font-size: 35px;
+        line-height: 72.55px;
+        width: 150px;
+        height: 73px;
+        text-align: left;
+
+}
