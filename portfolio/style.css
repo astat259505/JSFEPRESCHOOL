@@ -1229,5 +1229,257 @@ ul {
         width: 150px;
         height: 73px;
         text-align: left;
-
+    }
 }
+
+@media (max-width: 479px) {
+    :root {
+        --font-merriweather: 20px Merriweather;
+        --font-inter: 10px Inter;
+    }
+    .container {
+        width: 320px;
+    }
+
+    .header-container {
+        width: 320px;
+        padding: 20px;
+        background-position: -400px 0;
+        justify-content: space-between;
+
+        
+    }
+
+    .header-logo {
+        margin-right: 0;
+    }
+
+    .hero-container {
+        width: 310px;
+        background-position: -400px -90px;
+        height: 360px;
+        padding: 140px 0 0 10px;
+    }
+
+    .hero-content {
+        width: 310px;
+    }
+
+    .hero-container-title {
+        width: 310px;
+        
+    }
+
+    .hero-container-text {
+        width: 250px;
+        height: auto;
+        padding: 20px 0 35px 0;
+
+    }
+
+    .section-title-container {
+        width: 310px;
+    }
+
+    .skills-container {
+        width: 320px;
+        height: auto;
+        padding: 20px 0 13px;
+    }
+    
+    .skill-items {
+        width: 320px;
+        height: auto;
+        padding: 0;
+        flex-direction: column;
+        row-gap: 30px;
+        align-content: center;
+        padding-top: 20px;
+    }
+
+    .skill-item {
+        width: 240px;
+    }
+
+    .skills-title {
+        width: 240px;
+        padding: 20px 0 20px;
+    }
+
+    .skills-text {
+        width: 200px;
+        padding: 0 20px;
+    }
+
+    .portfolio-container {
+        width: 320px;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .portfolio-buttons {
+        width: 320px;
+        padding: 15px 5px 35px 5px;
+        justify-content: flex-start;
+        
+    }
+
+    .button-one {
+        width: 155px;
+    }
+
+    .button-two {
+        width: 155px;
+    }
+
+    .portfolio-image:nth-child(2) {
+        background-position: center;
+    }
+
+    .portfolio-image:nth-child(3) {
+        background-position: center;
+    }
+
+    .portfolio-image:nth-child(5) {
+        background-position: center;
+    }
+
+    .portfolio-image:nth-child(6) {
+        background-position: center;
+    }
+
+    .video-container {
+        width: 320px;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .video-player {
+        box-sizing: content-box;
+       height: calc(231px * 0.77);
+       margin-top: 20px;
+       padding: 0;
+       background-position: -150px -128px;
+    }
+
+    .price-container {
+        width: 320px;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .price-items {
+        box-sizing: border-box;
+        width: 320px;
+        padding: 20px 10px 40px;
+        row-gap: 30px;
+        height: auto;
+    }
+
+    .price-item {
+        width: 300px;
+        padding: 15px 0 0;
+        height: auto;
+    }
+
+    .price-button {
+        padding: 25px 72.5px 30px;
+
+    }
+
+    .contact-container {
+        width: 320px;
+        background-size: 230%;
+        padding: 30px 5px 30px 25px;
+        height: 525px;
+        
+    }
+
+    .input-forms-container {
+        width: 290px;
+        margin: 0;
+        
+    }
+
+    .input-form {
+        width: 290px;
+    }
+
+    .textarea {
+        width: 290px;
+    }
+
+    .footer-container {
+        width: 320px;
+        height: 120px;
+        padding: 15px 0px;
+        align-content: space-between;
+        justify-content: space-between;
+        
+        
+    }
+
+    .footer-data {
+        order: 3;
+    }
+
+    .rsschool {
+        order: 2
+
+    }
+
+    .social-list {
+        order: 1;
+        height: 40px;
+    }
+
+    .footer-links {
+        height: 40px;
+    }
+
+    .contact-button {
+        left: 0px;
+    }
+
+    .nav {
+        box-sizing: border-box;
+        width: 620px;
+        height: 1024px;
+        position: absolute;
+        z-index: 2;
+        background-color: var(--bg-dark);
+        right: -620px;
+        top: 0px;
+    }
+    
+     .open {
+         right: 0px;
+         transition: 0.5s;
+         box-shadow: -200px 0 1px 0 rgba(0, 0, 0, 0.5);
+     }
+    
+     
+    
+    .nav-list {
+        width: 150px;
+        height: 429px;
+        flex-direction: column;
+        margin: 134px 343px 461px 380px;
+        justify-content: start;
+        gap: 16px;
+    }
+    
+    .nav-item {
+        width: 150px;
+        height: 73px;
+        text-align: left;
+    }
+    .nav-link {
+        font-size: 35px;
+        line-height: 72.55px;
+        width: 150px;
+        height: 73px;
+        text-align: left;
+    }
+}
+
