@@ -12,12 +12,19 @@
 html {
     scroll-behavior: smooth;
     background-color: var(--bg-dark);
+    overflow-x: hidden;
 }
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
 
 .container {
     width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
     
 }
 
@@ -628,14 +635,14 @@ ul {
     display: block;
 }
 
-@media (max-width: 1400px) {
-    body {
-        overflow-x: hidden;
-    }
+@media (max-width: 1439px) {
+    
+
 
     .container {
-        width: 768px;
+        max-width: 768px;
         padding: 0;
+        
         
     }
 
@@ -661,6 +668,7 @@ ul {
         height: 422px;
         background-image: url(assets/img/hero-tablet.jpg);
         padding: 78px 0 0 60px;
+
         
     
     }
@@ -668,6 +676,7 @@ ul {
     .hero-container-title {
         font-family: Merriweather;
         font-size: 32px;
+        font-weight: 400;
         line-height: 64px;
         height: 64px;
     
@@ -700,6 +709,7 @@ ul {
         width: 768px;
         height: 729px;
         padding: 80px 20px 13px;
+    
     }
 
     .skill-items {
@@ -872,6 +882,16 @@ ul {
 
 }
 
+.input-form {
+    padding: 0;
+    height: 50px;
+}
+
+.textarea {
+    height: 100px;
+    padding: 0;
+}
+
 .contacts-title {
     height: 64px;
     font-size: 32px;
@@ -959,12 +979,13 @@ ul {
     background-color: var(--bg-dark);
     right: -620px;
     top: 0px;
+    transition: 0.5s;
 }
 
  .open {
      right: 0px;
      transition: 0.5s;
-     box-shadow: -200px 0 1px 0 rgba(0, 0, 0, 0.5);
+     box-shadow: -200px 0 0 0 rgba(0, 0, 0, 0.6);
  }
 
  
@@ -1063,8 +1084,19 @@ ul {
         padding: 28px 0;
     }
 
+    .nav {
+        box-sizing: border-box;
+        width: 472px;
+        height: 1024px;
+        position: absolute;
+        z-index: 2;
+        background-color: var(--bg-dark);
+        right: -148px
+        top: 0px;
+    }
 
-}
+
+};
 
 
 @media (max-width: 619px) {
@@ -1186,7 +1218,7 @@ ul {
 
     .footer-container {
         width: 480px;
-        padding: 28px 33px;
+        padding: 28px 0;
         
     }
 
@@ -1239,6 +1271,7 @@ ul {
     }
     .container {
         width: 320px;
+        
     }
 
     .header-container {
@@ -1246,6 +1279,7 @@ ul {
         padding: 20px;
         background-position: -400px 0;
         justify-content: space-between;
+       
 
         
     }
