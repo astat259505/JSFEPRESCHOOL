@@ -15,10 +15,12 @@ html {
     overflow-x: hidden;
 }
 
+
 body {
     overflow-x: hidden;
     position: relative;
 }
+
 
 
 .container {
@@ -182,6 +184,7 @@ ul {
     cursor: pointer;
     color: var(--gold);
     transition: 0.3s;
+    padding: 0;
 }
 
 .button-two:hover {
@@ -419,6 +422,8 @@ ul {
     position: absolute;
     width: 130px;
     height: 130px;
+    border: 0;
+    cursor: pointer;
     transition: 0.3s;
     border: 0px;
     cursor: pointer;
@@ -544,6 +549,7 @@ ul {
     font-size: 20px;
     line-height: 40px;
     color: var(--gold);
+    padding: 0;
     
 }
 
@@ -552,8 +558,11 @@ ul {
 }
 
 .textarea-container {
+    height: 100px;
     padding: 20px 0 30px;
 }
+
+
 
 .footer-container {
     height: 150px;
