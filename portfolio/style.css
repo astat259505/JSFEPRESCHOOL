@@ -1096,10 +1096,10 @@ ul {
     }
 
 
-};
+}
 
 
-@media (max-width: 619px) {
+@media (max-width: 620px) {
 
     :root {
         --font-merriweather: 28px Merriweather;
@@ -1262,6 +1262,7 @@ ul {
         height: 73px;
         text-align: left;
     }
+
 }
 
 @media (max-width: 479px) {
