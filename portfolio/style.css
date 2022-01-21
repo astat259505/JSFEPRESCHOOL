@@ -12,16 +12,22 @@
 html {
     scroll-behavior: smooth;
     background-color: var(--bg-dark);
+    overflow-x: hidden;
 }
 
-.main {
-    display: flex;
+
+body {
+    overflow-x: hidden;
+    position: relative;
 }
+
+
 
 .container {
     width: 1440px;
     margin: 0 auto;
     padding: 0;
+    
 }
 
 .header-container {
@@ -32,6 +38,34 @@ html {
     justify-content: flex-end;
     align-items: center;
     height: 90px;
+}
+.hamburger {
+    width: 50px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 11px 0;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 3;
+    display: none;
+    
+    
+}
+
+
+.line {
+    width: 50px;
+    height: 3px;
+    background-color: var(--white);
+    
+}   
+
+
+.hamburger:hover .line {
+    background-color: var(--gold);
+    transition: 0.3s;
 }
 
 .nav-list {
@@ -57,7 +91,10 @@ html {
     color: var(--gold);
 }
 
-
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
     
 
 ul {
@@ -388,6 +425,8 @@ ul {
     border: 0;
     cursor: pointer;
     transition: 0.3s;
+    border: 0px;
+    cursor: pointer;
 }   
 
 .play-button:hover {
@@ -604,3 +643,886 @@ ul {
 .year {
     display: block;
 }
+
+@media (max-width: 1439px) {
+    
+
+
+    .container {
+        max-width: 768px;
+        padding: 0;
+        
+        
+    }
+
+
+    :root {
+        --font-merriweather: 32px Merriweather;
+        --font-inter: 18px Inter;
+    }
+
+    .header-container {
+        box-sizing: border-box;
+        width: 768px;
+        height: 90px;
+        padding: 20px 66px 20px 55px;
+        background-image: url(assets/img/hero-tablet.jpg);
+        align-items: center;
+        
+        
+    
+    }
+
+    .hero-container {
+        height: 422px;
+        background-image: url(assets/img/hero-tablet.jpg);
+        padding: 78px 0 0 60px;
+
+        
+    
+    }
+
+    .hero-container-title {
+        font-family: Merriweather;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 64px;
+        height: 64px;
+    
+    }
+
+    .button-container {
+        padding: 0;
+    }
+
+    .hero-container-text{
+        padding: 20px 318px 60px 0;
+        height: 72px;
+        width: 390px;
+        line-height: 24.2px;
+        font-weight: 400;
+        font: 20px Inter;
+    }
+
+    .button-one {
+        font: 20px Inter;
+        line-height: 40px;
+    }
+
+    .button-two {
+        font: 20px Inter;
+        line-height: 40px;
+    }
+    .skills-container {
+        box-sizing: border-box;
+        width: 768px;
+        height: 729px;
+        padding: 80px 20px 13px;
+    
+    }
+
+    .skill-items {
+        box-sizing: border-box;
+        width: 728px;
+        height: 556px;
+        padding: 9px 44px 27px 40px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-end;
+        row-gap: 36px;
+        
+    }
+
+    .portfolio-container {
+        width: 768px;
+        height: 3790px;
+        padding-top: 80px;
+    }
+
+    .section-title-portfolio {
+        font: var(--font-merriweather);
+        line-height: 80px;
+        font-size: 32px;
+        font-weight: bold;
+        box-sizing: border-box;
+        width: 185px;
+        height: 80px;
+        padding: 0 20px;
+        
+    }
+
+    .portfolio-images {
+    justify-content: center;
+    }
+
+    .section-title-container {
+    width: 364px;
+    background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+    overflow: hidden;
+    
+    }
+
+    .section-title-skills {
+    font: var(--font-merriweather);
+    line-height: 40.22px;
+    font-size: 32px;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 131px;
+    height: 80px;
+    padding: 20px 20px;
+    }
+
+    .skill-item {
+    width: 300px;
+    height: 224px;
+    }
+
+    .skills-image-one {
+    padding: 0 119px;
+    }
+
+    .skills-image-two{
+    padding: 0 120px ;
+    }
+    .skills-title {
+     padding: 30px 10px 20px;
+    }
+
+ .skills-text {
+     padding: 0 10px 40px;
+     line-height: 21.78px;
+ }
+
+ .portfolio-buttons {
+    width: 445px;
+    height: 115px;   
+    padding: 50px 161px 60px 162px;
+    flex-wrap: wrap;
+
+ }
+
+ .portfolio-images {
+     padding-top: 0;
+ }
+
+ .video-container {
+    padding-top: 80px;
+    height: 548px;
+ }
+
+ .section-title-video {
+    font: var(--font-merriweather);
+    line-height: 80px;
+    font-size: 32px;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 131px;
+    height: 80px;
+    padding: 0 20px;
+ }
+
+ .video-player {
+     box-sizing: border-box;
+     height: 468px;
+     padding: 50px 0 0 0;
+     background-image: url(assets/img/video-player-tablet.jpg);   
+
+ }
+
+ .play-button {
+     width: 65px;
+     height: 65px;
+     background-size: contain;
+
+ }
+
+.price-container {
+    padding-top: 80px;
+    height: 1825px;
+    width: 768px;
+}
+.section-title-price {
+    font: var(--font-merriweather);
+    line-height: 80px;
+    font-size: 32px;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 122px;
+    height: 80px;
+    padding: 0 20px;
+}
+
+.price-items {
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    width: 768px;
+    padding: 50px 174px 80px;
+    row-gap: 50px;
+}
+
+.price-item {
+    width: 420px;
+    height: 505px;
+}
+.price-button {
+        padding: 38px 100px 43px;
+    }
+
+.sub {
+    font-size: 28px;
+    line-height: 56px;
+}
+
+.contact-container {
+    box-sizing: border-box;
+    width: 768px;
+    height: 600px;
+    overflow: hidden;
+    background-image: url(assets/img/contacts-tablet.jpg);
+    background-position: left top;
+    background-size: contain;
+    padding: 60px 159px 111px;
+}
+
+.input-form-container {
+    width: 450px;
+    height: 429px;
+
+}
+
+.input-form {
+    padding: 0;
+    height: 50px;
+}
+
+.textarea {
+    height: 100px;
+    padding: 0;
+}
+
+.contacts-title {
+    height: 64px;
+    font-size: 32px;
+    line-height: 64px;
+    text-align: center;
+    
+}
+
+.input-form-container {
+    height: 50px;
+}
+
+.contact-button {
+    position: relative;
+    left: 117px;
+    top: -2px;
+}
+
+.footer-container {
+    width: 210px;
+    height: 134px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 279px;
+    overflow: hidden;
+}
+
+.footer-item {
+    font-size: 20px;
+    line-height: 24.2px;
+}
+
+.rsschool {
+    width: 210px;
+}
+
+.footer-data {
+    width: 210px;
+    height: 24px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 30px;
+}
+
+.copyright {
+    width: 24px;
+}
+
+.footer-links {
+    padding: 0;
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: flex;
+}
+.hamburger.open {
+    padding: 0;
+}
+
+.hamburger.open .line1 { 
+    transform: rotate(45deg) translate(8px, 10px);
+}
+
+.hamburger.open .line2 {
+    opacity: 0;
+}
+
+.hamburger.open .line3 {
+    transform: rotate(-45deg) translate(8px, -10px);
+}
+
+.hamburger.open .line {
+    width: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav {
+    box-sizing: border-box;
+    width: 620px;
+    height: 1024px;
+    position: absolute;
+    z-index: 2;
+    background-color: var(--bg-dark);
+    right: -620px;
+    top: 0px;
+    transition: 0.5s;
+}
+
+ .open {
+     right: 0px;
+     transition: 0.5s;
+     box-shadow: -200px 0 0 0 rgba(0, 0, 0, 0.6);
+ }
+
+ 
+
+.nav-list {
+    width: 150px;
+    height: 429px;
+    flex-direction: column;
+    margin: 134px 343px 461px 127px;
+    justify-content: start;
+    gap: 16px;
+}
+
+.nav-item {
+    width: 150px;
+    height: 73px;
+    text-align: left;
+}
+.nav-link {
+    font-size: 35px;
+    line-height: 72.55px;
+    width: 150px;
+    height: 73px;
+    text-align: left;
+}
+
+.header-logo {
+    margin-left: 0;
+}
+
+.english {
+    width: 25px;
+    padding-left: 19px;
+}
+
+.russian {
+    width: 22px;
+}
+
+.slash {
+    width: 10px;
+    padding-right: 2px;
+}
+
+.language-switch {
+    width: 102px;
+}
+} 
+
+@media (min-width: 620px) and (max-width: 767px) {
+    .container {
+        width: 620px;
+    }
+
+    .skills-container {
+        width: 620px;
+        padding: 80px 0 13px;
+    }
+    
+    .skill-items {
+        width: 620px;
+        padding: 0;
+        justify-content: start;
+    }
+
+    .portfolio-container {
+        width: 620px;
+    }
+
+    .portfolio-buttons {
+        padding: 50px 68px 60px 86px;
+    }
+
+    .video-container {
+        width: 620px;
+    }
+
+    .price-container {
+        width: 620px;
+        
+    }
+
+    .price-items {
+        width: 620px;
+        padding: 50px 0 80px 97px;
+    }
+
+    .contact-container {
+        width: 620px;
+        height: 491px;
+        padding: 20px 82px 111px;
+    }
+
+    .footer-container {
+        width: 620px;
+        padding: 28px 0;
+    }
+
+    .nav {
+        box-sizing: border-box;
+        width: 472px;
+        height: 1024px;
+        position: absolute;
+        z-index: 2;
+        background-color: var(--bg-dark);
+        right: -148px
+        top: 0px;
+    }
+
+
+};
+
+
+@media (max-width: 619px) {
+
+    :root {
+        --font-merriweather: 28px Merriweather;
+        --font-inter: 12px Inter;
+    }
+    .container {
+        width: 480px;
+    }
+
+    .header-container {
+        width: 480px;
+        background-position: -250px 0;
+        justify-content: space-between;
+
+        
+    }
+
+    .header-logo {
+        margin-right: 0;
+    }
+
+    .hero-container {
+        width: 450px;
+        background-position: -250px -90px;
+        height: 380px;
+        padding: 120px 0 0 30px;
+    }
+
+    .hero-content {
+        width: 450px;
+    }
+
+    .hero-container-title {
+        width: 450px;
+        
+    }
+
+    .hero-container-text {
+        padding: 20px 0 35px 0;
+
+    }
+
+    .skills-container {
+        width: 480px;
+        height: auto;
+        padding: 40px 0 13px;
+    }
+    
+    .skill-items {
+        width: 480px;
+        height: auto;
+        padding: 0;
+        row-gap: 5px;
+        align-content: flex-start;
+
+    }
+
+    .skill-item {
+        width: 240px;
+    }
+
+    .skills-title {
+        width: 240px;
+        padding: 20px 0 20px;
+    }
+
+    .skills-text {
+        width: 200px;
+        padding: 0 20px;
+    }
+
+    .portfolio-container {
+        width: 480px;
+        height: auto;
+        padding-top: 40px;
+    }
+
+    .portfolio-buttons {
+        padding: 25px 16px 40px 18px;
+    }
+
+    .video-container {
+        width: 480px;
+        height: auto;
+        padding-top: 40px;
+    }
+
+    .video-player {
+        box-sizing: content-box;
+       height: calc(468px * 0.77);
+       padding-top: 35px;
+       background-position: center 35px;
+    }
+
+    .price-container {
+        width: 480px;
+        height: auto;
+        padding-top: 40px;
+    }
+
+    .price-items {
+        box-sizing: border-box;
+        width: 480px;
+        padding: 20px 30px 40px;
+        row-gap: 30px;
+        height: auto;
+    }
+
+    .contact-container {
+        width: 480px;
+        background-size: 140%;
+        padding: 30px 15px 30px;
+        height: 525px;
+        
+    }
+
+    .footer-container {
+        width: 480px;
+        padding: 28px 0;
+        
+    }
+
+    .nav {
+        box-sizing: border-box;
+        width: 620px;
+        height: 1024px;
+        position: absolute;
+        z-index: 2;
+        background-color: var(--bg-dark);
+        right: -620px;
+        top: 0px;
+    }
+    
+     .open {
+         right: 0px;
+         transition: 0.5s;
+         box-shadow: -200px 0 1px 0 rgba(0, 0, 0, 0.5);
+     }
+    
+     
+    
+    .nav-list {
+        width: 150px;
+        height: 429px;
+        flex-direction: column;
+        margin: 134px 343px 461px 200px;
+        justify-content: start;
+        gap: 16px;
+    }
+    
+    .nav-item {
+        width: 150px;
+        height: 73px;
+        text-align: left;
+    }
+    .nav-link {
+        font-size: 35px;
+        line-height: 72.55px;
+        width: 150px;
+        height: 73px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 479px) {
+    :root {
+        --font-merriweather: 20px Merriweather;
+        --font-inter: 10px Inter;
+    }
+    .container {
+        width: 320px;
+        
+    }
+
+    .header-container {
+        width: 320px;
+        padding: 20px;
+        background-position: -400px 0;
+        justify-content: space-between;
+       
+
+        
+    }
+
+    .header-logo {
+        margin-right: 0;
+    }
+
+    .hero-container {
+        width: 310px;
+        background-position: -400px -90px;
+        height: 360px;
+        padding: 140px 0 0 10px;
+    }
+
+    .hero-content {
+        width: 310px;
+    }
+
+    .hero-container-title {
+        width: 310px;
+        
+    }
+
+    .hero-container-text {
+        width: 250px;
+        height: auto;
+        padding: 20px 0 35px 0;
+
+    }
+
+    .section-title-container {
+        width: 310px;
+    }
+
+    .skills-container {
+        width: 320px;
+        height: auto;
+        padding: 20px 0 13px;
+    }
+    
+    .skill-items {
+        width: 320px;
+        height: auto;
+        padding: 0;
+        flex-direction: column;
+        row-gap: 30px;
+        align-content: center;
+        padding-top: 20px;
+    }
+
+    .skill-item {
+        width: 240px;
+    }
+
+    .skills-title {
+        width: 240px;
+        padding: 20px 0 20px;
+    }
+
+    .skills-text {
+        width: 200px;
+        padding: 0 20px;
+    }
+
+    .portfolio-container {
+        width: 320px;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .portfolio-buttons {
+        width: 320px;
+        padding: 15px 5px 35px 5px;
+        justify-content: flex-start;
+        
+    }
+
+    .button-one {
+        width: 155px;
+    }
+
+    .button-two {
+        width: 155px;
+    }
+
+    .portfolio-image:nth-child(2) {
+        background-position: center;
+    }
+
+    .portfolio-image:nth-child(3) {
+        background-position: center;
+    }
+
+    .portfolio-image:nth-child(5) {
+        background-position: center;
+    }
+
+    .portfolio-image:nth-child(6) {
+        background-position: center;
+    }
+
+    .video-container {
+        width: 320px;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .video-player {
+        box-sizing: content-box;
+       height: calc(231px * 0.77);
+       margin-top: 20px;
+       padding: 0;
+       background-position: -150px -128px;
+    }
+
+    .price-container {
+        width: 320px;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .price-items {
+        box-sizing: border-box;
+        width: 320px;
+        padding: 20px 10px 40px;
+        row-gap: 30px;
+        height: auto;
+    }
+
+    .price-item {
+        width: 300px;
+        padding: 15px 0 0;
+        height: auto;
+    }
+
+    .price-button {
+        padding: 25px 72.5px 30px;
+
+    }
+
+    .contact-container {
+        width: 320px;
+        background-size: 230%;
+        padding: 30px 5px 30px 25px;
+        height: 525px;
+        
+    }
+
+    .input-forms-container {
+        width: 290px;
+        margin: 0;
+        
+    }
+
+    .input-form {
+        width: 290px;
+    }
+
+    .textarea {
+        width: 290px;
+    }
+
+    .footer-container {
+        width: 320px;
+        height: 120px;
+        padding: 15px 0px;
+        align-content: space-between;
+        justify-content: space-between;
+        
+        
+    }
+
+    .footer-data {
+        order: 3;
+    }
+
+    .rsschool {
+        order: 2
+
+    }
+
+    .social-list {
+        order: 1;
+        height: 40px;
+    }
+
+    .footer-links {
+        height: 40px;
+    }
+
+    .contact-button {
+        left: 0px;
+    }
+
+    .nav {
+        box-sizing: border-box;
+        width: 620px;
+        height: 1024px;
+        position: absolute;
+        z-index: 2;
+        background-color: var(--bg-dark);
+        right: -620px;
+        top: 0px;
+    }
+    
+     .open {
+         right: 0px;
+         transition: 0.5s;
+         box-shadow: -200px 0 1px 0 rgba(0, 0, 0, 0.5);
+     }
+    
+     
+    
+    .nav-list {
+        width: 150px;
+        height: 429px;
+        flex-direction: column;
+        margin: 134px 343px 461px 380px;
+        justify-content: start;
+        gap: 16px;
+    }
+    
+    .nav-item {
+        width: 150px;
+        height: 73px;
+        text-align: left;
+    }
+    .nav-link {
+        font-size: 35px;
+        line-height: 72.55px;
+        width: 150px;
+        height: 73px;
+        text-align: left;
+    }
+}
+
