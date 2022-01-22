@@ -172,6 +172,7 @@ ul {
     color:var(--white);
 }
 
+
 .button-two {
     width: 220px;
     height: 55px;
@@ -191,8 +192,23 @@ ul {
     color: var(--white);
 }
 
+.portfolio-button.active {
+    background-color: var(--gold);
+    border: 0;
+    font: var(--font-inter);
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    color: var(--bg-dark);
+}
+
 .button-container {
     padding-top: 25px;
+}
+
+.portfolio-button.active:hover {
+    color:var(--white);
 }
 
 
