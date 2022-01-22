@@ -369,33 +369,33 @@ ul {
 }
 
 .portfolio-image:nth-child(1) {
-    background: url(assets/img/portfolio-img-1.jpg);
+    background: url(assets/img/autumn/1.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .portfolio-image:nth-child(2) {
-    background: url(assets/img/portfolio-img-2.jpg);
+    background: url(assets/img/autumn/2.jpg);
     background-repeat: no-repeat;
 }
 
 .portfolio-image:nth-child(3) {
-    background: url(assets/img/portfolio-img-3.jpg);
+    background: url(assets/img/autumn/3.jpg);
     background-repeat: no-repeat;
 }
 
 .portfolio-image:nth-child(4) {
-    background: url(assets/img/portfolio-img-4.jpg);
+    background: url(assets/img/autumn/4.jpg);
     background-repeat: no-repeat;
 }
 
 .portfolio-image:nth-child(5) {
-    background: url(assets/img/portfolio-img-5.jpg);
+    background: url(assets/img/autumn/5.jpg);
     background-repeat: no-repeat;
 }
 
 .portfolio-image:nth-child(6) {
-    background: url(assets/img/portfolio-img-6.jpg);
+    background: url(assets/img/autumn/6.jpg);
     background-repeat: no-repeat;
 }
 
