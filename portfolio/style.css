@@ -366,6 +366,7 @@ ul {
 .portfolio-image {
     width: 450px;
     height: 560px;
+    display: block;
 }
 
 .portfolio-image:nth-child(1) {
@@ -1044,7 +1045,7 @@ ul {
 }
 } 
 
-@media (min-width: 620px) and (max-width: 767px) {
+@media (min-width: 620px) and (max-width: 768px) {
     .container {
         width: 620px;
     }

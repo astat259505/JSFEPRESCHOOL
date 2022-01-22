@@ -22,7 +22,15 @@ const closeMenu = (event) => {
 nav.addEventListener ('click', closeMenu);
 
 
-console.log('Вёрстка соответствует макету. Ширина экрана 768px - +48\n');
-console.log('Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки - +15\n');
-console.log('На ширине экрана 768рх и меньше реализовано адаптивное меню - +22\n');
-console.log('Итого - 75');
+const portfolioButtons = document.querySelector('.portfolio-buttons');
+const portfolioImages = document.querySelectorAll('.portfolio-image');
+
+const changeImage = (event) => {
+    if (event.target.classList.contains('portfolio-button')) {
+      portfolioImages.forEach ((img, index) => img.src = `assets/img/${event.target.dataset.season}/${index + 1}.jpg`)
+    }
+};
+
+portfolioButtons.addEventListener('click', changeImage);
+
+
