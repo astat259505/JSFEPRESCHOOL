@@ -11,7 +11,6 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: var(--bg-dark);
     overflow-x: hidden;
 }
 
@@ -19,6 +18,10 @@ html {
 body {
     overflow-x: hidden;
     position: relative;
+}
+
+.body {
+    background-color: var(--bg-dark);
 }
 
 
@@ -29,6 +32,9 @@ body {
     padding: 0;
     
 }
+
+
+
 
 .header-container {
     background-image: url('./assets/img/bg.jpg');
@@ -192,6 +198,12 @@ ul {
     color: var(--white);
 }
 
+.button-two.light-theme {
+    background-color: var(--white);
+    color: var(--bg-dark);
+}
+
+
 .portfolio-button.active {
     background-color: var(--gold);
     border: 0;
@@ -210,6 +222,7 @@ ul {
 .portfolio-button.active:hover {
     color:var(--white);
 }
+
 
 
 .language-switch {
@@ -660,6 +673,26 @@ ul {
 .year {
     display: block;
 }
+
+.theme-switch {
+    padding: 29px 21px 23px 10px;
+    cursor: pointer;
+}
+
+.theme-switch:hover {
+    filter: invert(24%) sepia(35%) saturate(290%) hue-rotate(7deg) brightness(87%) contrast(87%);
+
+}
+
+.light-theme {
+    background-color: var(--white);
+    color: var(--bg-dark);
+}
+
+.section-title-container.light-theme {
+    background-image: linear-gradient(to top, #fff 39px, #000 39px, #000 41px, #fff 41px);;
+}
+
 
 @media (max-width: 1439px) {
     
@@ -1305,6 +1338,7 @@ ul {
 
 .hamburger {
     display: flex;
+    order: 4;
 }
 .hamburger.open {
     padding: 0;
@@ -1371,6 +1405,7 @@ ul {
 
 .header-logo {
     margin-left: 0;
+    
 }
 
 .english {
@@ -1389,6 +1424,11 @@ ul {
 
 .language-switch {
     width: 102px;
+}
+
+.theme-switch {
+    order: 3;
+    padding-right: 30px;
 }
 } 
 
@@ -1662,6 +1702,14 @@ ul {
 
     .header-logo {
         margin-right: 0;
+    }
+
+    .language-switch {
+        margin-right: 10px;
+    }
+
+    .theme-switch {
+        padding-right: 15px;
     }
 
     .hero-container {
