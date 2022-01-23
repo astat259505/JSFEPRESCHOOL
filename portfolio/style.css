@@ -682,6 +682,337 @@ ul {
         box-sizing: border-box;
         width: 768px;
         height: 90px;
+        padding: 20px 0 20px 30px;
+        background-image: url(assets/img/hero-tablet.jpg);
+        align-items: center;
+        
+        
+    
+    }
+
+    .hero-container {
+        height: 422px;
+        background-image: url(assets/img/hero-tablet.jpg);
+        padding: 78px 0 0 60px;
+
+        
+    
+    }
+
+    .hero-container-title {
+        font-family: Merriweather;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 64px;
+        height: 64px;
+    
+    }
+
+    .button-container {
+        padding: 0;
+    }
+
+    .hero-container-text{
+        padding: 20px 318px 60px 0;
+        height: 72px;
+        width: 390px;
+        line-height: 24.2px;
+        font-weight: 400;
+        font: 20px Inter;
+    }
+
+    .button-one {
+        font: 20px Inter;
+        line-height: 40px;
+    }
+
+    .button-two {
+        font: 20px Inter;
+        line-height: 40px;
+    }
+    .skills-container {
+        box-sizing: border-box;
+        width: 768px;
+        height: 729px;
+        padding: 80px 20px 13px;
+    
+    }
+
+    .skill-items {
+        box-sizing: border-box;
+        width: 728px;
+        height: 556px;
+        padding: 9px 44px 27px 40px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-end;
+        row-gap: 36px;
+        
+    }
+
+    .portfolio-container {
+        width: 768px;
+        height: 3790px;
+        padding-top: 80px;
+    }
+
+    .section-title-portfolio {
+        font: var(--font-merriweather);
+        line-height: 80px;
+        font-size: 32px;
+        font-weight: bold;
+        box-sizing: border-box;
+        width: 185px;
+        height: 80px;
+        padding: 0 20px;
+        
+    }
+
+    .portfolio-images {
+    justify-content: center;
+    }
+
+    .section-title-container {
+    width: 364px;
+    background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+    overflow: hidden;
+    
+    }
+
+    .section-title-skills {
+    font: var(--font-merriweather);
+    line-height: 40.22px;
+    font-size: 32px;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 131px;
+    height: 80px;
+    padding: 20px 20px;
+    }
+
+    .skill-item {
+    width: 300px;
+    height: 224px;
+    }
+
+    .skills-image-one {
+    padding: 0 119px;
+    }
+
+    .skills-image-two{
+    padding: 0 120px ;
+    }
+    .skills-title {
+     padding: 30px 10px 20px;
+    }
+
+ .skills-text {
+     padding: 0 10px 40px;
+     line-height: 21.78px;
+ }
+
+ .portfolio-buttons {
+    width: 445px;
+    height: 115px;   
+    padding: 50px 161px 60px 162px;
+    flex-wrap: wrap;
+
+ }
+
+ .portfolio-images {
+     padding-top: 0;
+ }
+
+ .video-container {
+    padding-top: 80px;
+    height: 548px;
+ }
+
+ .section-title-video {
+    font: var(--font-merriweather);
+    line-height: 80px;
+    font-size: 32px;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 131px;
+    height: 80px;
+    padding: 0 20px;
+ }
+
+ .video-player {
+     box-sizing: border-box;
+     height: 468px;
+     padding: 50px 0 0 0;
+     background-image: url(assets/img/video-player-tablet.jpg);   
+
+ }
+
+ .play-button {
+     width: 65px;
+     height: 65px;
+     background-size: contain;
+
+ }
+
+.price-container {
+    padding-top: 80px;
+    height: 1825px;
+    width: 768px;
+}
+.section-title-price {
+    font: var(--font-merriweather);
+    line-height: 80px;
+    font-size: 32px;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 122px;
+    height: 80px;
+    padding: 0 20px;
+}
+
+.price-items {
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    width: 768px;
+    padding: 50px 174px 80px;
+    row-gap: 50px;
+}
+
+.price-item {
+    width: 420px;
+    height: 505px;
+}
+.price-button {
+        padding: 38px 100px 43px;
+    }
+
+.sub {
+    font-size: 28px;
+    line-height: 56px;
+}
+
+.contact-container {
+    box-sizing: border-box;
+    width: 768px;
+    height: 600px;
+    overflow: hidden;
+    background-image: url(assets/img/contacts-tablet.jpg);
+    background-position: left top;
+    background-size: contain;
+    padding: 60px 159px 111px;
+}
+
+.input-form-container {
+    width: 450px;
+    height: 429px;
+
+}
+
+.input-form {
+    padding: 0;
+    height: 50px;
+}
+
+.textarea {
+    height: 100px;
+    padding: 0;
+}
+
+.contacts-title {
+    height: 64px;
+    font-size: 32px;
+    line-height: 64px;
+    text-align: center;
+    
+}
+
+.input-form-container {
+    height: 50px;
+}
+
+.contact-button {
+    position: relative;
+    left: 117px;
+    top: -2px;
+}
+
+.footer-container {
+    width: 210px;
+    height: 134px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 279px;
+    overflow: hidden;
+}
+
+.footer-item {
+    font-size: 20px;
+    line-height: 24.2px;
+}
+
+.rsschool {
+    width: 210px;
+}
+
+.footer-data {
+    width: 210px;
+    height: 24px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 30px;
+}
+
+.copyright {
+    width: 24px;
+}
+
+.footer-links {
+    padding: 0;
+    justify-content: space-between;
+}
+
+.header-logo {
+    margin-left: 0;
+}
+
+.english {
+    width: 25px;
+    padding-left: 19px;
+}
+
+.russian {
+    width: 22px;
+}
+
+.slash {
+    width: 10px;
+    padding-right: 2px;
+}
+
+.language-switch {
+    width: 102px;
+}
+} 
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0;
+        
+        
+    }
+
+
+    :root {
+        --font-merriweather: 32px Merriweather;
+        --font-inter: 18px Inter;
+    }
+
+    .header-container {
+        box-sizing: border-box;
+        width: 768px;
+        height: 90px;
         padding: 20px 66px 20px 55px;
         background-image: url(assets/img/hero-tablet.jpg);
         align-items: center;
@@ -1061,58 +1392,64 @@ ul {
 }
 } 
 
-@media (min-width: 620px) and (max-width: 768px) {
+
+@media (max-width: 767px) {
     .container {
-        width: 620px;
+        width: 100vw;
     }
 
+
     .skills-container {
-        width: 620px;
+        width: 100vw;
         padding: 80px 0 13px;
     }
     
     .skill-items {
-        width: 620px;
+        width: 100vw;
         padding: 0;
-        justify-content: start;
+        justify-content: space-around;
     }
 
     .portfolio-container {
-        width: 620px;
+        width: 100vw;
     }
 
     .portfolio-buttons {
-        padding: 50px 68px 60px 86px;
+        padding: 50px 0 60px 0;
+        padding-left: calc(100vw - 80%);
+        padding-right: calc(100vw - 80%);
     }
 
     .video-container {
-        width: 620px;
+        width: 100vw;
     }
 
     .price-container {
-        width: 620px;
+        width: 100vw;
         
     }
 
     .price-items {
-        width: 620px;
+        width: 100vw;
         padding: 50px 0 80px 97px;
+        padding-left: calc(100vw - 78%)
     }
 
     .contact-container {
-        width: 620px;
+        width: 100vw;
         height: 491px;
-        padding: 20px 82px 111px;
+        padding: 20px 131px 111px;
+        background-size: 120%;
     }
 
     .footer-container {
-        width: 620px;
+        width: 100vw;
         padding: 28px 0;
     }
 
     .nav {
         box-sizing: border-box;
-        width: 472px;
+        width: calc(100vw - 148px);
         height: 1024px;
         position: absolute;
         z-index: 2;
@@ -1121,6 +1458,19 @@ ul {
         top: 0px;
     }
 
+
+}
+
+
+@media (max-width: 680px) {
+    .portfolio-buttons {
+        padding: 50px 0 60px 0;
+        padding-left: calc(100vw - 85%);
+        padding-right: calc(100vw - 80%);
+    }
+
+    .price-items {
+        padding-left: calc(100vw - 83%)
 
 }
 
