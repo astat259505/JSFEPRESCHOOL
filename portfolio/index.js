@@ -130,8 +130,10 @@ const changeThemeArr = ['.body','.skills-container', '.section-title-skills', '.
 
 const changeTheme = (event) => {
     changeThemeArr.forEach(cl => document.querySelectorAll(cl).forEach(el => el.classList.toggle('light-theme')));
+    changeThemeButton.classList.toggle('change');
 }
 
 const changeThemeButton = document.querySelector('.theme-switch');
 changeThemeButton.addEventListener('click', changeTheme);
+
 

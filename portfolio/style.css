@@ -124,6 +124,8 @@ ul {
 .header-logo:hover {
     filter: invert(24%) sepia(35%) saturate(290%) hue-rotate(7deg) brightness(87%) contrast(87%);
 }
+
+
 .hero-container {
     background-image: url('./assets/img/bg.jpg');
     background-repeat: no-repeat;
@@ -677,6 +679,17 @@ ul {
 .theme-switch {
     padding: 29px 21px 23px 10px;
     cursor: pointer;
+    width: 45px;
+    height: 45px;
+    background-image: url(assets/svg/dark-theme.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 29px;
+}
+
+.theme-switch.change {
+    background-image: url(assets/svg/light-theme.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 29px;
 }
 
 .theme-switch:hover {
