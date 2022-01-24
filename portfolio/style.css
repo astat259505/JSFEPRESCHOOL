@@ -689,7 +689,7 @@ ul {
 .theme-switch.change {
     background-image: url(assets/svg/light-theme.svg);
     background-repeat: no-repeat;
-    background-position: 15px 29px;
+    background-position: 10px 29px;
 }
 
 .theme-switch:hover {
