@@ -262,6 +262,8 @@ ul {
 }
 
 .section-title-container {
+    display: flex;
+    justify-content: center;
     width: 700px;
     margin: 0 auto;
     background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
@@ -270,7 +272,7 @@ ul {
     
 }
 .section-title-skills {
-    width: 152px;
+    width: auto;
     height: 80px;
     font: var(--font-merriweather);
     color: var(--gold);
@@ -279,22 +281,24 @@ ul {
     position: relative;
     background-color: var(--bg-dark);
     text-align: center;
+    padding: 0 20px;
 }
 
 .section-title-portfolio {
-    width: 220px;
+    width: auto;
     height: 80px;
     font: var(--font-merriweather);
     color: var(--gold);
     line-height: 80px;
     margin: 0 auto;
+    padding: 0 20px;
     position: relative;
     background-color: var(--bg-dark);
     text-align: center;
 }
 
 .section-title-video {
-    width: 154px;
+    width: auto;
     height: 80px;
     font: var(--font-merriweather);
     color: var(--gold);
@@ -303,10 +307,11 @@ ul {
     position: relative;
     background-color: var(--bg-dark);
     text-align: center;  
+    padding: 0 20px;
 }
 
 .section-title-price {
-    width: 142px;
+    width: auto;
     height: 80px;
     font: var(--font-merriweather);
     color: var(--gold);
@@ -314,7 +319,8 @@ ul {
     margin: 0 auto;
     position: relative;
     background-color: var(--bg-dark);
-    text-align: center; 
+    text-align: center;
+    padding: 0 20px; 
 }
 .skill-items {
     display: flex;
@@ -525,6 +531,10 @@ ul {
     color: var(--white);
     text-align: center;
     height: 180px;
+}
+
+.price-description {
+    display: block;
 }
 
 .price-button {
@@ -818,7 +828,7 @@ ul {
         font-size: 32px;
         font-weight: bold;
         box-sizing: border-box;
-        width: 185px;
+        width: auto;
         height: 80px;
         padding: 0 20px;
         
@@ -841,7 +851,7 @@ ul {
     font-size: 32px;
     font-weight: bold;
     box-sizing: border-box;
-    width: 131px;
+    width: auto;
     height: 80px;
     padding: 20px 20px;
     }
@@ -890,7 +900,7 @@ ul {
     font-size: 32px;
     font-weight: bold;
     box-sizing: border-box;
-    width: 131px;
+    width: auto;
     height: 80px;
     padding: 0 20px;
  }
@@ -921,7 +931,7 @@ ul {
     font-size: 32px;
     font-weight: bold;
     box-sizing: border-box;
-    width: 122px;
+    width: auto;
     height: 80px;
     padding: 0 20px;
 }
@@ -1149,7 +1159,7 @@ ul {
         font-size: 32px;
         font-weight: bold;
         box-sizing: border-box;
-        width: 185px;
+        width: auto;
         height: 80px;
         padding: 0 20px;
         
@@ -1172,7 +1182,7 @@ ul {
     font-size: 32px;
     font-weight: bold;
     box-sizing: border-box;
-    width: 131px;
+    width: auto;
     height: 80px;
     padding: 20px 20px;
     }
@@ -1221,7 +1231,7 @@ ul {
     font-size: 32px;
     font-weight: bold;
     box-sizing: border-box;
-    width: 131px;
+    width: auto;
     height: 80px;
     padding: 0 20px;
  }
@@ -1252,7 +1262,7 @@ ul {
     font-size: 32px;
     font-weight: bold;
     box-sizing: border-box;
-    width: 122px;
+    width: auto;
     height: 80px;
     padding: 0 20px;
 }
