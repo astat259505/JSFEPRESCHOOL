@@ -1718,7 +1718,7 @@ ul {
 
     .portfolio-buttons {
         width: 320px;
-        padding: 15px 5px 35px 5px;
+        padding: 15px 5px 35px 3px;
         justify-content: flex-start;
         
     }
@@ -1731,20 +1731,28 @@ ul {
         width: 155px;
     }
 
+    .portfolio-image {
+        height: 349px;
+    }
+
+    .portfolio-image:nth-child(1) {
+        background-size: contain;
+    }
+
     .portfolio-image:nth-child(2) {
-        background-position: center;
+        background-size: contain;
     }
 
     .portfolio-image:nth-child(3) {
-        background-position: center;
+        background-size: contain;
     }
 
     .portfolio-image:nth-child(5) {
-        background-position: center;
+        background-size: contain;
     }
 
     .portfolio-image:nth-child(6) {
-        background-position: center;
+        background-size: contain;
     }
 
     .video-container {
