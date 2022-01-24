@@ -241,8 +241,18 @@ ul {
 }
 
 .english {
+    cursor: pointer;
+}
+
+.russian {
+    cursor: pointer;
+}
+
+.active-lng {
     color: var(--gold);
 }
+
+
 
 .skills-container {
     height: 382px;

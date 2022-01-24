@@ -136,4 +136,35 @@ const changeTheme = (event) => {
 const changeThemeButton = document.querySelector('.theme-switch');
 changeThemeButton.addEventListener('click', changeTheme);
 
+const getTranslate = (lng) => {
+  const lngData = document.querySelectorAll('[data-i18n]');
+  lngData.forEach(el => el.textContent = i18Obj[lng][el.dataset.i18n]);
+}
+
+const russianLngButton = document.querySelector('.russian');
+const englishLngButton = document.querySelector('.english');
+
+
+const lngChange = (event) => {
+  russianLngButton.classList.remove('active-lng');
+  englishLngButton.classList.remove('active-lng');
+  event.target.classList.add('active-lng');
+}
+
+russianLngButton.addEventListener('click', lngChange);
+englishLngButton.addEventListener('click', lngChange);
+
+russianLngButton.addEventListener('click', () =>
+getTranslate('ru'))
+
+englishLngButton.addEventListener('click', () =>
+getTranslate('en'))
+
+
+
+
+
+
+
+
 
