@@ -160,6 +160,38 @@ getTranslate('ru'))
 englishLngButton.addEventListener('click', () =>
 getTranslate('en'))
 
+let lang = 'en';
+let theme = 'dark'
+
+russianLngButton.addEventListener('click', () =>
+lang = 'ru');
+
+
+
+ 
+
+const setLocalStorage = () => {
+  localStorage.setItem('lang', lang);
+  localStorage.setItem('theme', theme)
+}
+window.addEventListener('beforeunload', setLocalStorage);
+
+const getLocalStorage = () => {
+  if (localStorage.getItem('lang')) {
+    const lang = localStorage.getItem('lang')
+    getTranslate(lang);
+  }
+  if (localStorage.getItem('theme')) { 
+    const theme = localStorage.getItem('theme')
+    changeTheme(theme);
+  }
+    
+      
+      
+  }
+
+
+window.addEventListener('load', getLocalStorage);
 
 
 
