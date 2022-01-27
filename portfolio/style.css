@@ -871,6 +871,11 @@ ul {
 
  }
 
+ .portfolio-button.active {
+    font: 20px Inter;
+    line-height: 40px;
+ }
+
  .portfolio-images {
      padding-top: 0;
  }
@@ -1821,8 +1826,13 @@ ul {
         
     }
 
+    .portfolio-image {
+        width: 280px;
+        height: 349px;
+    }
+
     .button-one {
-        width: 155px;
+        width: 200px;
     }
 
     .button-two {
@@ -1880,7 +1890,7 @@ ul {
     }
 
     .price-button {
-        padding: 25px 72.5px 30px;
+        padding: 25px 50px 30px;
 
     }
 

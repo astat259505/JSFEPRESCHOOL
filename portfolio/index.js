@@ -76,7 +76,7 @@ const i18Obj = {
       'price-description-3-span-4': 'Готовность через 1 неделю',
       'price-description-3-span-5': 'Макияж, визаж, прическа',
       'order': 'Заказать съемку',
-      'contact-me': 'Свяжитесь со мной',
+      'contact-me': 'Контакты',
       'send-message': 'Отправить'
     }
   }
