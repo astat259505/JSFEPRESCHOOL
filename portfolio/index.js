@@ -131,6 +131,9 @@ const changeThemeArr = ['.body','.skills-container', '.section-title-skills', '.
 const changeTheme = (event) => {
     changeThemeArr.forEach(cl => document.querySelectorAll(cl).forEach(el => el.classList.toggle('light-theme')));
     changeThemeButton.classList.toggle('change');
+    if (changeThemeButton.classList.contains('change')) {
+      theme = 'light'
+    }
 }
 
 const changeThemeButton = document.querySelector('.theme-switch');
@@ -181,13 +184,17 @@ const getLocalStorage = () => {
     const lang = localStorage.getItem('lang')
     getTranslate(lang);
   }
-  if (localStorage.getItem('theme')) { 
-    const theme = localStorage.getItem('theme')
-    changeTheme(theme);
-  }
-    
-      
-      
+  if (localStorage.getItem('lang') === 'en') {
+    russianLngButton.classList.remove('active-lng');
+    englishLngButton.classList.add('active-lng')
+  } 
+  if (localStorage.getItem('lang') === 'ru') {
+    englishLngButton.classList.remove('active-lng');
+    russianLngButton.classList.add('active-lng')
+  } 
+  if (localStorage.getItem('theme') === 'light') { 
+    changeTheme();
+  }    
   }
 
 
