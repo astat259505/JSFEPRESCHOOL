@@ -131,7 +131,7 @@ const changeThemeArr = ['.body','.skills-container', '.section-title-skills', '.
 const changeTheme = (event) => {
     changeThemeArr.forEach(cl => document.querySelectorAll(cl).forEach(el => el.classList.toggle('light-theme')));
     changeThemeButton.classList.toggle('change');
-    if (changeThemeButton.classList.contains('change')) {
+    if (event.target.classList.contains('change')) {
       theme = 'light'
     }
 }
@@ -184,7 +184,7 @@ const getLocalStorage = () => {
     const lang = localStorage.getItem('lang')
     getTranslate(lang);
   }
-  if (localStorage.getItem('lang') === 'en') {
+   if (localStorage.getItem('lang') === 'en') {
     russianLngButton.classList.remove('active-lng');
     englishLngButton.classList.add('active-lng')
   } 
@@ -197,8 +197,22 @@ const getLocalStorage = () => {
   }    
   }
 
-
 window.addEventListener('load', getLocalStorage);
+
+const seasons = ['winter', 'spring', 'summer', 'autumn'];
+
+const preloadPortfolioImages = () => {
+  seasons.forEach(season => {
+    for (let i = 1; i <= 6; i++) {
+      const img = new Image();
+      img.src = `./assets/img/${season}/${i}.jpg`
+    }
+  })
+}
+
+preloadPortfolioImages();
+
+
 
 
 
