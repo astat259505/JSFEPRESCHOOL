@@ -124,9 +124,9 @@ const changeClassActive = (event) => {
 
 portfolioButton.addEventListener('click', changeClassActive);
 
-const changeThemeArr = ['.body','.skills-container', '.section-title-skills', '.section-title-container', '.skills-title', 
+const changeThemeArr = ['.body', '.hero-container', '.skills-container', '.section-title-skills', '.section-title-container', '.skills-title', 
 '.skills-text', '.portfolio-container', '.section-title-portfolio', '.button-two', '.video-container', 
-'.section-title-video', '.price-container', '.section-title-price', '.sub', '.sub-description']
+'.section-title-video', '.price-container', '.section-title-price', '.sub', '.sub-description', '.nav', '.nav-link', '.line']
 
 const changeTheme = (event) => {
     changeThemeArr.forEach(cl => document.querySelectorAll(cl).forEach(el => el.classList.toggle('light-theme')));

@@ -74,6 +74,12 @@ body {
     transition: 0.3s;
 }
 
+.nav.light-theme {
+    background-color: transparent;
+}
+
+
+
 .nav-list {
     list-style: none;
     display: flex;
@@ -95,6 +101,16 @@ body {
 
 .nav-link:hover {
     color: var(--gold);
+}
+
+.nav-link.light-theme {
+    text-decoration: none;
+    font: var(--font-inter);
+    color: var(--white);
+    line-height: 50px;
+    text-align: center;
+    background-color: transparent;
+    transition: 0.3s;
 }
 
 .main-container {
@@ -416,37 +432,6 @@ ul {
     display: block;
 }
 
-.portfolio-image:nth-child(1) {
-    background: url(assets/img/autumn/1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.portfolio-image:nth-child(2) {
-    background: url(assets/img/autumn/2.jpg);
-    background-repeat: no-repeat;
-}
-
-.portfolio-image:nth-child(3) {
-    background: url(assets/img/autumn/3.jpg);
-    background-repeat: no-repeat;
-}
-
-.portfolio-image:nth-child(4) {
-    background: url(assets/img/autumn/4.jpg);
-    background-repeat: no-repeat;
-}
-
-.portfolio-image:nth-child(5) {
-    background: url(assets/img/autumn/5.jpg);
-    background-repeat: no-repeat;
-}
-
-.portfolio-image:nth-child(6) {
-    background: url(assets/img/autumn/6.jpg);
-    background-repeat: no-repeat;
-}
-
 .video-container {
     background-color: var(--bg-dark);
     padding-top: 100px
@@ -725,6 +710,7 @@ ul {
 .section-title-container.light-theme {
     background-image: linear-gradient(to top, #fff 39px, #000 39px, #000 41px, #fff 41px);;
 }
+
 
 
 @media (max-width: 1439px) {
@@ -1375,6 +1361,7 @@ ul {
 }
 .hamburger.open {
     padding: 0;
+    box-shadow: none;
 }
 
 .hamburger.open .line1 { 
@@ -1394,6 +1381,10 @@ ul {
     transition: all 0.3s ease-in-out;
 }
 
+.hamburger.open .line.light-theme {
+    background-color: var(--bg-dark);
+}
+
 .nav {
     box-sizing: border-box;
     width: 620px;
@@ -1411,6 +1402,11 @@ ul {
      transition: 0.5s;
      box-shadow: -200px 0 0 0 rgba(0, 0, 0, 0.6);
  }
+
+ .hamburger.open {
+    padding: 0;
+    box-shadow: none;
+}
 
  
 
@@ -1434,6 +1430,16 @@ ul {
     width: 150px;
     height: 73px;
     text-align: left;
+}
+
+.nav.light-theme {
+    background-color: var(--white);
+}
+
+.nav-link.light-theme {
+    font-size: 35px;
+    line-height: 72.55px;
+    color: var(--bg-dark);
 }
 
 .header-logo {
