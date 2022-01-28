@@ -211,15 +211,6 @@ ul {
     color: var(--matte-black);
 }
 
-.hero-button.light-theme {
-    background-color: var(--white);
-    color: var(--matte-black);
-}
-
-.hero-button.light-theme:hover {
-    background-color: var(--matte-black);
-    color: var(--gold);
-}
 
 
 .button-one {
@@ -234,6 +225,16 @@ ul {
     transition: 0.3s;
     padding: 0;
     
+}
+
+.button-one.light-theme {
+    background-color: var(--gold);
+    color: var(--bg-dark);
+}
+
+.button-one.light-theme:hover {
+    background-color: var(--matte-black);
+    color: var(--gold);
 }
 
 .button-one:hover {
@@ -261,8 +262,23 @@ ul {
 }
 
 .button-two.light-theme {
-    background-color: var(--white);
+    background-color: var(--gold);
     color: var(--bg-dark);
+}
+
+.button-two.light-theme:hover {
+    background-color: var(--matte-black);
+    color: var(--gold);
+}
+
+.button-one.hero-button.light-theme {
+    background-color: var(--white);
+    color: var(--matte-black);
+}
+
+.hero-button.light-theme:hover {
+    background-color: var(--matte-black);
+    color: var(--gold);
 }
 
 
@@ -277,6 +293,13 @@ ul {
     color: var(--bg-dark);
 }
 
+.portfolio-button.active.light-theme {
+    background-color: var(--matte-black);
+    color: var(--gold);
+}
+
+
+
 .button-container {
     padding-top: 25px;
 }
@@ -284,6 +307,11 @@ ul {
 .portfolio-button.active:hover {
     color:var(--white);
 }
+
+.portfolio-button.active.light-theme:hover {
+   color: var(--gold);
+}
+
 
 
 
@@ -534,6 +562,10 @@ ul {
     cursor: pointer;
 }   
 
+.play-button.light-theme {
+    background: url(assets/svg/play-hover-light.svg);
+}
+
 .play-button:hover {
     filter: invert(24%) sepia(35%) saturate(290%) hue-rotate(7deg) brightness(87%) contrast(87%);
 }
@@ -609,6 +641,11 @@ ul {
     
 }   
 
+.contact-container.light-theme {
+  background: url(assets/img/contacts-light-theme.jpg);
+  color: var(--matte-black);
+}
+
 
 
 .contacts-title {
@@ -619,6 +656,11 @@ ul {
     margin: 0;
     height: 80px;
     padding-bottom: 20px;
+}
+
+.contacts-title.light-theme {
+    color: var(--matte-black);
+    background-color: transparent;
 }
 
 .input-form {
@@ -635,6 +677,11 @@ ul {
     color: var(--gold);
 }
 
+.input-form.light-theme {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--matte-black);
+}
+
 
 ::placeholder {
     font: var(--font-inter);
@@ -643,6 +690,17 @@ ul {
     color:var(--gold);
     padding: 5px 0 5px 20px;
 }
+
+.input-form.light-theme::placeholder {
+    color: var(--matte-black);
+}
+
+.textarea.light-theme::placeholder {
+    color: var(--matte-black);
+}
+
+
+
 
 
 
@@ -662,6 +720,10 @@ ul {
     
 }
 
+.textarea.light-theme {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 .input-form-container {
     padding-top: 20px;
 }
@@ -669,6 +731,16 @@ ul {
 .textarea-container {
     height: 100px;
     padding: 20px 0 30px;
+}
+
+.contact-button.light-theme {
+    background-color: var(--white);
+    color: var(--matte-black);
+}
+
+.contact-button.light-theme:hover {
+    background-color: var(--matte-black);
+    color: var(--gold);
 }
 
 
@@ -682,6 +754,10 @@ ul {
     align-items: center;
 }
 
+.footer-container.light-theme {
+    background-color: var(--white);
+}
+
 .footer-item {
     font: var(--font-inter);
     font-size: 20px;
@@ -689,11 +765,19 @@ ul {
     color: var(--white);
 }
 
+.footer-item.light-theme {
+    color: var(--matte-black);
+}
+
 .github-link {
     text-decoration: none;
     color: var(--white);
     transition: 0.3s;
     display: block;
+}
+
+.github-link.light-theme {
+    color: var(--matte-black);
 }
 
 .github-link:hover {
@@ -704,6 +788,10 @@ ul {
     text-decoration: none;
     color: var(--white);
     transition: 0.3s;
+}
+
+.rsschool-link.light-theme {
+
 }
 
 .rsschool-link:hover {
@@ -730,7 +818,9 @@ ul {
     width: 32px;
     height: 32px;
     transition: 0.3s;
+    
 }
+
 
 .footer-link:hover {
     filter: invert(24%) sepia(35%) saturate(290%) hue-rotate(7deg) brightness(87%) contrast(87%);
@@ -776,7 +866,7 @@ ul {
 
 .light-theme {
     background-color: var(--white);
-    color: var(--bg-dark);
+    color: var(--matte-black);
 }
 
 .section-title-container.light-theme {
