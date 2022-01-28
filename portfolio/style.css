@@ -713,6 +713,7 @@ ul {
 
 
 
+
 @media (max-width: 1439px) {
     
 
@@ -1390,6 +1391,11 @@ ul {
     background-color: var(--bg-dark);
 }
 
+.hamburger:hover .line.light-theme {
+    background-color: var(--gold);
+   transition: 0.3s;
+}
+
 .nav {
     box-sizing: border-box;
     width: 620px;
@@ -1447,6 +1453,9 @@ ul {
     color: var(--bg-dark);
 }
 
+.nav-link.light-theme:hover { 
+    color: var(--gold);
+}
 .header-logo {
     margin-left: 0;
     
