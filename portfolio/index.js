@@ -131,8 +131,10 @@ const changeThemeArr = ['.body', '.hero-container', '.skills-container', '.secti
 const changeTheme = (event) => {
     changeThemeArr.forEach(cl => document.querySelectorAll(cl).forEach(el => el.classList.toggle('light-theme')));
     changeThemeButton.classList.toggle('change');
-    if (event.target.classList.contains('change')) {
+    if (changeThemeButton.classList.contains('change')) {
       theme = 'light'
+    } else {
+      theme ='dark'
     }
 }
 
@@ -142,6 +144,7 @@ changeThemeButton.addEventListener('click', changeTheme);
 const getTranslate = (lng) => {
   const lngData = document.querySelectorAll('[data-i18n]');
   lngData.forEach(el => el.textContent = i18Obj[lng][el.dataset.i18n]);
+  lang = lng;
 }
 
 const russianLngButton = document.querySelector('.russian');
@@ -166,8 +169,8 @@ getTranslate('en'))
 let lang = 'en';
 let theme = 'dark'
 
-russianLngButton.addEventListener('click', () =>
-lang = 'ru');
+
+
 
 
 
@@ -183,6 +186,7 @@ const getLocalStorage = () => {
   if (localStorage.getItem('lang')) {
     const lang = localStorage.getItem('lang')
     getTranslate(lang);
+
   }
    if (localStorage.getItem('lang') === 'en') {
     russianLngButton.classList.remove('active-lng');
