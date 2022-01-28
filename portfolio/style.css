@@ -7,6 +7,7 @@
     --font-merriweather: bold 40px Merriweather;
     --font-inter: 20px Inter;
     --font-inter-bold: bold 20px Inter;
+    --matte-black: #1C1C1C;
 }
 
 html {
@@ -45,6 +46,11 @@ body {
     align-items: center;
     height: 90px;
 }
+
+.header-container.light-theme {
+    background-image: url(assets/img/bg-light-theme.jpg);
+}
+
 .hamburger {
     width: 50px;
     height: 28px;
@@ -106,7 +112,7 @@ body {
 .nav-link.light-theme {
     text-decoration: none;
     font: var(--font-inter);
-    color: var(--white);
+    color: var(--matte-black);
     line-height: 50px;
     text-align: center;
     background-color: transparent;
@@ -140,6 +146,13 @@ ul {
 
 }
 
+.header-logo.light-theme {
+    background-image: url(assets/svg/header-logo-light.svg);
+    background-color: transparent;
+    
+
+}
+
 .header-logo:hover {
     filter: invert(24%) sepia(35%) saturate(290%) hue-rotate(7deg) brightness(87%) contrast(87%);
 }
@@ -152,6 +165,10 @@ ul {
     height: 660px;
     padding: 160px 0 0 80px;
     
+}
+
+.hero-container.light-theme {
+    background-image: url(assets/img/bg-light-theme.jpg);
 }
 
 .hero-content {
@@ -170,6 +187,13 @@ ul {
 
 }
 
+.hero-container-title.light-theme {
+    background-color: transparent;
+    color: var(--matte-black);
+}
+
+
+
 .hero-container-text {
     font: var(--font-inter);
     color: var(--white);
@@ -181,6 +205,23 @@ ul {
     margin: 0;
 
 }
+
+.hero-container-text.light-theme {
+    background-color: transparent;
+    color: var(--matte-black);
+}
+
+.hero-button.light-theme {
+    background-color: var(--white);
+    color: var(--matte-black);
+}
+
+.hero-button.light-theme:hover {
+    background-color: var(--matte-black);
+    color: var(--gold);
+}
+
+
 .button-one {
     width: 220px;
     height: 55px;
@@ -259,9 +300,15 @@ ul {
     text-align: center;
 }
 
+.language-switch.light-theme {
+    color: var(--matte-black);
+   background-color: transparent;
+}
+
 .english {
     cursor: pointer;
 }
+
 
 .english:hover {
     color: var(--gold);
@@ -273,11 +320,25 @@ ul {
 
 .russian {
     cursor: pointer;
+   
+}
+
+.russian.light-theme {
+    background-color: transparent;
+}
+
+.english.light-theme {
+    background-color: transparent;
 }
 
 .active-lng {
     color: var(--gold);
 }
+
+.active-lng.light-theme {
+    color: var(--white);
+}
+
 
 
 
@@ -697,13 +758,13 @@ ul {
     cursor: pointer;
     width: 45px;
     height: 45px;
-    background-image: url(assets/svg/dark-theme.svg);
+    background-image: url(assets/svg/light-theme.svg);
     background-repeat: no-repeat;
     background-position: 15px 29px;
 }
 
 .theme-switch.change {
-    background-image: url(assets/svg/light-theme.svg);
+    background-image: url(assets/svg/dark-theme.svg);
     background-repeat: no-repeat;
     background-position: 10px 29px;
 }
