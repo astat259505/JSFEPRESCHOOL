@@ -113,6 +113,9 @@ body {
     transition: 0.3s;
 }
 
+.nav-link.light-theme:hover {
+    color: var(--gold);
+}
 .main-container {
     display: flex;
     flex-direction: column;
@@ -258,6 +261,14 @@ ul {
 
 .english {
     cursor: pointer;
+}
+
+.english:hover {
+    color: var(--gold);
+}
+
+.russian:hover {
+    color: var(--gold);
 }
 
 .russian {
