@@ -157,6 +157,9 @@ ul {
     filter: invert(24%) sepia(35%) saturate(290%) hue-rotate(7deg) brightness(87%) contrast(87%);
 }
 
+.header-logo.light-theme:hover {
+    filter: invert(83%) sepia(25%) saturate(430%) hue-rotate(7deg) brightness(84%) contrast(81%);
+}
 
 .hero-container {
     background-image: url('./assets/img/bg.jpg');
@@ -570,6 +573,10 @@ ul {
     filter: invert(24%) sepia(35%) saturate(290%) hue-rotate(7deg) brightness(87%) contrast(87%);
 }
 
+.play-button.play-button.light-theme:hover {
+    filter: invert(83%) sepia(25%) saturate(430%) hue-rotate(7deg) brightness(84%) contrast(81%);
+}
+
 
 .price-container {
     padding-top: 100px;
@@ -791,7 +798,7 @@ ul {
 }
 
 .rsschool-link.light-theme {
-
+    color: var(--matte-black);     
 }
 
 .rsschool-link:hover {
@@ -822,17 +829,61 @@ ul {
 }
 
 
-.footer-link:hover {
-    filter: invert(24%) sepia(35%) saturate(290%) hue-rotate(7deg) brightness(87%) contrast(87%);
-}
-
-
 .footer-data {
     display: flex;
     width: 182px;
     height: 50px;
     gap: 20px;
     padding-left: 20px;
+}
+
+.instagram-icon {
+    width: 32px;
+    height: 32px;
+    fill:var(--white);
+    
+}
+
+.facebook-icon {
+    width: 32px;
+    height: 32px;
+    fill:var(--white);
+}
+
+.twitter-icon {
+    width: 32px;
+    height: 32px;
+    fill:var(--white);
+}
+
+.pinterest-icon {
+    width: 32px;
+    height: 32px;
+    fill:var(--white);
+}
+
+
+
+.instagram-icon.light-theme {
+    fill: #1C1C1C;
+    
+
+}
+
+.facebook-icon.light-theme {
+    fill: #1C1C1C;
+}
+
+.twitter-icon.light-theme {
+    fill: #1C1C1C;
+}
+
+.pinterest-icon.light-theme {
+    fill: #1C1C1C;
+}
+
+.footer-icon.light-theme {
+    fill: #1C1C1C;
 }
 
 .copyright {
@@ -857,6 +908,10 @@ ul {
     background-image: url(assets/svg/dark-theme.svg);
     background-repeat: no-repeat;
     background-position: 10px 29px;
+}
+
+.theme-switch.change:hover {
+    filter: invert(83%) sepia(25%) saturate(430%) hue-rotate(7deg) brightness(84%) contrast(81%);
 }
 
 .theme-switch:hover {
@@ -905,6 +960,10 @@ ul {
     
     }
 
+    .header-container.light-theme {
+        background-image: url(assets/img/hero-tablet-light.jpg);
+    }
+
     .hero-container {
         height: 422px;
         background-image: url(assets/img/hero-tablet.jpg);
@@ -912,6 +971,10 @@ ul {
 
         
     
+    }
+
+    .hero-container.light-theme {
+        background-image: url(assets/img/hero-tablet-light.jpg);
     }
 
     .hero-container-title {
@@ -1074,6 +1137,12 @@ ul {
 
  }
 
+ .play-button.light-theme {
+    width: 65px;
+    height: 65px;
+    background-size: contain;
+ }
+
 .price-container {
     padding-top: 80px;
     height: 1825px;
@@ -1120,6 +1189,10 @@ ul {
     background-position: left top;
     background-size: contain;
     padding: 60px 159px 111px;
+}
+
+.contact-container.light-theme {
+    background-image: url(assets/img/contacts-tablet-light.jpg)
 }
 
 .input-form-container {
@@ -1556,6 +1629,10 @@ ul {
 .hamburger:hover .line.light-theme {
     background-color: var(--gold);
    transition: 0.3s;
+}
+
+.hamburger .line.light-theme {
+    background-color: var(--bg-dark);
 }
 
 .nav {

@@ -130,7 +130,7 @@ const changeThemeArr = ['.body', '.hero-container', '.skills-container', '.butto
 '.header-container', '.hero-container-title', '.hero-container-text ', '.header-logo',  
 '.active-lng', '.language-switch', '.russian', '.active-lng', '.english', '.play-button', '.contact-container',
 '.contacts-title', '.input-form', '.textarea', 'contact-button', '.footer-container', '.footer-item', '.github-link',
-'.rsschool-link', '.instagram-icon']
+'.rsschool-link', '.instagram-icon', '.facebook-icon', '.twitter-icon', '.pinterest-icon', ]
 
 const changeTheme = (event) => {
     changeThemeArr.forEach(cl => document.querySelectorAll(cl).forEach(el => el.classList.toggle('light-theme')));
@@ -219,12 +219,6 @@ const preloadPortfolioImages = () => {
 }
 
 preloadPortfolioImages();
-
-
-
-
-
-
 
 
 
