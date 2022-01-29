@@ -882,8 +882,8 @@ ul {
     fill: #1C1C1C;
 }
 
-.footer-icon.light-theme {
-    fill: #1C1C1C;
+.footer-icon:hover {
+    fill: var(--gold);
 }
 
 .copyright {
