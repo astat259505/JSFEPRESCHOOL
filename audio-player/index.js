@@ -4,7 +4,6 @@ const audio = document.querySelector('audio');
 
 const PlayAudio = () => {
     if (!isPlay) {
-        audio.currentTime = 0;
         audio.play();
     } else {
         audio.pause();
@@ -27,3 +26,18 @@ playBtn.addEventListener('click', () => {
     PlayAudio();
 }
 );
+
+
+let playNum = 0;
+
+
+const progressBar = document.querySelector('.progress-bar');
+const timeline = document.querySelector('.timeline')
+
+const progressBarMove = () => {
+ const percents = (audio.currentTime / audio.duration) * 294
+ progressBar.style.left = `${percents}px`
+}
+
+audio.addEventListener('timeupdate', progressBarMove);
+
