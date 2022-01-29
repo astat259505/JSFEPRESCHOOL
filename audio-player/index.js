@@ -35,9 +35,24 @@ const progressBar = document.querySelector('.progress-bar');
 const timeline = document.querySelector('.timeline')
 
 const progressBarMove = () => {
- const percents = (audio.currentTime / audio.duration) * 294
- progressBar.style.left = `${percents}px`
+ const pixels = (audio.currentTime / audio.duration) * 294
+ progressBar.style.left = `${pixels}px`
 }
 
 audio.addEventListener('timeupdate', progressBarMove);
 
+
+const progressBarMoveByUser = (event) => {
+ const currentSongMoment = (event.offsetX / timeline.offsetWidth) * audio.duration;
+ audio.currentTime = currentSongMoment;     
+}
+
+let isMousedown = false;
+timeline.addEventListener('click', progressBarMoveByUser)
+timeline.addEventListener('mousedown', () => isMousedown = true);
+timeline.addEventListener('mouseup', () => isMousedown = false);
+timeline.addEventListener('mousemove', () => {
+    if (isMousedown) {
+    progressBarMoveByUser()
+    }
+});
