@@ -1,9 +1,39 @@
 .container {
-    width: 100%;
-    height: 100vh;
-    background-color: aqua;
+
 }
 
 .main-container {
-    
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audio-player {
+    width: 25%;
+    height: 50vh;
+    background-color: bisque;
+}
+
+.song-picture {
+    height: 70%;
+}
+
+.control-panel {
+    height: 30%;
+    display: flex;
+}
+
+.play-button {
+    width: 30%;
+    background-image: url(assets/svg/play.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center 10px;
+}
+
+.play-button.pause {
+    background-image: url(assets/svg/pause.png);
 }
