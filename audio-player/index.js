@@ -48,6 +48,10 @@ audio.addEventListener('durationchange', () => {
     songDuration.textContent = timeInCorrectForm(audio.duration);
 })
 
+audio.addEventListener('ended', () => [
+    playNext()
+])
+
 
 
 
@@ -80,6 +84,9 @@ const timeInCorrectForm = (time) => {
 
 
 const playList = ['assets/audio/beyonce.mp3', 'assets/audio/dontstartnow.mp3']
+const songImage = ['assets/img.lemonade.png', 'assets/img.dontstartnow.png']
+const artistName = ['Beyonce', 'Dua Lipa']
+const songName = ['Don`t Hurt Yourself', 'Don`t Start Now']
 
 let playNum = 0;
 

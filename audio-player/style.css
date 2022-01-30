@@ -12,13 +12,19 @@
 }
 
 .audio-player {
-    width: 25%;
-    height: 50vh;
+    width: 350px;
+    height: 400px;
     background-color: bisque;
 }
 
+
+.song-picture-wrapper {
+    height: 280px;
+    overflow: hidden;
+}
 .song-picture {
-    height: 70%;
+    width: 350px;
+    height: auto;
 }
 
 .control-panel {
@@ -28,24 +34,24 @@
 }
 
 .play-button {
-    width: 30%;
+    width: 20%;
     height: 60%;
     background-image: url(assets/svg/play.png);
     background-repeat: no-repeat;
     background-size: 50px 50px;
-    background-position: center 10px;
+    background-position: center 13px;
 }
 
 .play-button.pause {
     background-image: url(assets/svg/pause.png);
 }
 
-.song-name {
-    width: 40%;
+.song-data {
+    width: 60%;
 }
 
 .prev-next-btns {
-    width: 30%;
+    width: 20%;
 }
 
 .timeline-wrapper {
@@ -54,22 +60,40 @@
 }
 
 .timeline {
-    width: 300px;
+    width: 200px;
     height: 18px;
     background: linear-gradient(to top, transparent 0px, transparent 6px, black 7px, black 11px, transparent 12px, transparent 18px);
     position: relative;
+    left: 75px;
+    top: 14px;
 
     
     
 }
 
+.current-song-time {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 0px;
+}
+
+.song-duration {
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: 0px;
+}
+
 .progress-bar {
     width: 6px;
     height: 12px;
-    background-color: blueviolet;
+    background-color: rgb(193, 255, 6);
     position: absolute;
     left: 0px;
     bottom: 3px;
+    border-radius: 30%;
+    
 }
 
 .prev-btn {

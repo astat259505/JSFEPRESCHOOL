@@ -13,11 +13,16 @@
         <div class="container main-container">
            <section class="audio-player">
             <audio src="assets/audio/beyonce.mp3"></audio>
-                <div class="song-picture"></div>
+                <div class="song-picture-wrapper">
+                    <img src="assets/img/lemonade.png" alt="song poster" class="song-picture">
+                </div>
                 <div class="control-panel">
                     <div class="play-button">
                     </div>
-                    <div class="song-name"></div>
+                    <div class="song-data">
+                        <div class="artist-name">Beyonce</div>
+                        <div class="song-name">Don`t Hurt Yourself</div>
+                    </div>
                     <div class="prev-next-btns">
                         <div class="prev-btn"></div>
                         <div class="next-btn"></div>
@@ -25,9 +30,9 @@
                     <div class="timeline-wrapper">
                         <div class="timeline">
                             <div class="progress-bar"></div>
+                            <span class="current-song-time">0:00</span>
+                            <span class="song-duration"></span>
                         </div>
-                        <span class="current-song-time">0:00</span>
-                        <span class="song-duration"></span>
                     </div>
                 </div>
                </audio>
