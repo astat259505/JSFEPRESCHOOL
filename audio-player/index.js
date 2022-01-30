@@ -8,6 +8,7 @@ const PlayAudio = () => {
     } else {
         audio.pause();
     }
+
 }
 
 const playBtn = document.querySelector('.play-button');
@@ -84,16 +85,31 @@ if (playNum <= playList.length - 1) {
     playNum = 0
 }
 PlayAudio()
+
+}
+
+const playPrev = () => {
+    playNum = playNum - 1
+    if (playNum >= 0) {
+        audio.src = playList[playNum]
+    }  else if (playNum < 0) {
+        audio.src = playList[playList.length - 1]
+        playNum = playList.length - 1
+    }
+    PlayAudio()
 }
 
 
 const nextBtn = document.querySelector('.next-btn');
 nextBtn.addEventListener('click', () => {
     playNext()
-    
 })
 
-songDuration.textContent = timeInCorrectForm(audio.duration);
+const prevBtn = document.querySelector('.prev-btn')
+prevBtn.addEventListener('click', () => {
+    playPrev()
+})
+
 
 
 
