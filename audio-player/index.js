@@ -39,7 +39,10 @@ const progressBarMove = () => {
  progressBar.style.left = `${pixels}px`
 }
 
-audio.addEventListener('timeupdate', progressBarMove);
+audio.addEventListener('timeupdate', () => {
+    progressBarMove();
+    currentTimer.textContent = timeInCorrectForm(audio.currentTime);
+})
 
 
 const progressBarMoveByUser = (event) => {
@@ -56,3 +59,17 @@ timeline.addEventListener('mousemove', () => {
     progressBarMoveByUser()
     }
 });
+
+const currentTimer = document.querySelector('.current-song-time');
+const songDuration = document.querySelector('.song-duration');
+
+
+const timeInCorrectForm = (time) => {
+    let seconds = parseInt(time);
+    let minutes = parseInt(seconds / 60)
+    seconds = (String(seconds - (minutes * 60))).padStart(2, 0);
+    return `${minutes}:${seconds}`;
+}
+
+songDuration.textContent = timeInCorrectForm(audio.duration);
+
