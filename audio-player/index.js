@@ -41,7 +41,14 @@ const progressBarMove = () => {
 audio.addEventListener('timeupdate', () => {
     progressBarMove();
     currentTimer.textContent = timeInCorrectForm(audio.currentTime);
+    
 })
+
+audio.addEventListener('durationchange', () => {
+    songDuration.textContent = timeInCorrectForm(audio.duration);
+})
+
+
 
 
 const progressBarMoveByUser = (event) => {
@@ -63,13 +70,13 @@ const currentTimer = document.querySelector('.current-song-time');
 const songDuration = document.querySelector('.song-duration');
 
 
+
 const timeInCorrectForm = (time) => {
     let seconds = parseInt(time);
-    let minutes = parseInt(seconds / 60)
+    let minutes = String(parseInt(seconds / 60))
     seconds = (String(seconds - (minutes * 60))).padStart(2, 0);
     return `${minutes}:${seconds}`;
 }
-
 
 
 const playList = ['assets/audio/beyonce.mp3', 'assets/audio/dontstartnow.mp3']
@@ -85,6 +92,7 @@ if (playNum <= playList.length - 1) {
     playNum = 0
 }
 PlayAudio()
+playBtn.classList.add('pause')
 
 }
 
@@ -97,6 +105,8 @@ const playPrev = () => {
         playNum = playList.length - 1
     }
     PlayAudio()
+    playBtn.classList.add('pause')
+    
 }
 
 
@@ -108,10 +118,6 @@ nextBtn.addEventListener('click', () => {
 const prevBtn = document.querySelector('.prev-btn')
 prevBtn.addEventListener('click', () => {
     playPrev()
+
 })
-
-
-
-
-
 
