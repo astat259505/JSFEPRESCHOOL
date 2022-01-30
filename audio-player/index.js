@@ -28,8 +28,6 @@ playBtn.addEventListener('click', () => {
 );
 
 
-let playNum = 0;
-
 
 const progressBar = document.querySelector('.progress-bar');
 const timeline = document.querySelector('.timeline')
@@ -71,5 +69,33 @@ const timeInCorrectForm = (time) => {
     return `${minutes}:${seconds}`;
 }
 
+
+
+const playList = ['assets/audio/beyonce.mp3', 'assets/audio/dontstartnow.mp3']
+
+let playNum = 0;
+
+const playNext = () => {
+playNum = playNum + 1
+if (playNum <= playList.length - 1) {
+    audio.src = playList[playNum]
+}  else if (playNum >= playList.length) {
+    audio.src = playList[0]
+    playNum = 0
+}
+PlayAudio()
+}
+
+
+const nextBtn = document.querySelector('.next-btn');
+nextBtn.addEventListener('click', () => {
+    playNext()
+    
+})
+
 songDuration.textContent = timeInCorrectForm(audio.duration);
+
+
+
+
 

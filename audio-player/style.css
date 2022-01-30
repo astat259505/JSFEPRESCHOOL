@@ -71,3 +71,21 @@
     left: 0px;
     bottom: 3px;
 }
+
+.prev-btn {
+    width: 100%;
+    height: 50%;
+    background-image: url(assets/svg/backward.png);
+    background-repeat: no-repeat;
+    background-size: contain ;
+    background-position: center;
+}
+
+.next-btn {
+    width: 100%;
+    height: 50%;
+    background-image: url(assets/svg/forward.png);
+    background-repeat: no-repeat;
+    background-size: contain ;
+    background-position: center;
+}
