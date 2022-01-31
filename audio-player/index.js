@@ -83,19 +83,29 @@ const timeInCorrectForm = (time) => {
 }
 
 
-const playList = ['assets/audio/beyonce.mp3', 'assets/audio/dontstartnow.mp3']
-const songImage = ['assets/img.lemonade.png', 'assets/img.dontstartnow.png']
-const artistName = ['Beyonce', 'Dua Lipa']
-const songName = ['Don`t Hurt Yourself', 'Don`t Start Now']
+const playList = [['assets/audio/beyonce.mp3', 'assets/img/lemonade.png', 'Beyonce', 'Don`t Hurt Yourself'], 
+                 ['assets/audio/dontstartnow.mp3', 'assets/img/dontstartnow.png', 'Dua Lipa', 'Don`t Start Now']]
+
+const songPicture = document.querySelector('.song-picture');
+const artistName = document.querySelector('.artist-name');
+const songName = document.querySelector('.song-name');
 
 let playNum = 0;
 
 const playNext = () => {
 playNum = playNum + 1
 if (playNum <= playList.length - 1) {
-    audio.src = playList[playNum]
+    audio.src = playList[playNum][0]
+    songPicture.src = playList[playNum][1]
+    artistName.textContent = playList[playNum][2]
+    songName.textContent = playList[playNum][3]
+
 }  else if (playNum >= playList.length) {
-    audio.src = playList[0]
+    audio.src = playList[0][0]
+    songPicture.src = playList[0][1]
+    artistName.textContent = playList[0][2]
+    songName.textContent = playList[0][3]
+
     playNum = 0
 }
 PlayAudio()
@@ -106,9 +116,15 @@ playBtn.classList.add('pause')
 const playPrev = () => {
     playNum = playNum - 1
     if (playNum >= 0) {
-        audio.src = playList[playNum]
+        audio.src = playList[playNum][0]
+        songPicture.src = playList[playNum][1]
+        artistName.textContent = playList[playNum][2]
+        songName.textContent = playList[playNum][3]
     }  else if (playNum < 0) {
         audio.src = playList[playList.length - 1]
+        songPicture.src = playList[playList.length - 1][1]
+        artistName.textContent = playList[playList.length - 1][2]
+        songName.textContent = playList[playList.length - 1][3]
         playNum = playList.length - 1
     }
     PlayAudio()
