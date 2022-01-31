@@ -34,7 +34,7 @@ const progressBar = document.querySelector('.progress-bar');
 const timeline = document.querySelector('.timeline')
 
 const progressBarMove = () => {
- const pixels = (audio.currentTime / audio.duration) * 294
+ const pixels = (audio.currentTime / audio.duration) * 194
  progressBar.style.left = `${pixels}px`
 }
 
@@ -46,6 +46,7 @@ audio.addEventListener('timeupdate', () => {
 
 audio.addEventListener('durationchange', () => {
     songDuration.textContent = timeInCorrectForm(audio.duration);
+    
 })
 
 audio.addEventListener('ended', () => [
@@ -89,6 +90,7 @@ const playList = [['assets/audio/beyonce.mp3', 'assets/img/lemonade.png', 'Beyon
 const songPicture = document.querySelector('.song-picture');
 const artistName = document.querySelector('.artist-name');
 const songName = document.querySelector('.song-name');
+const background = document.querySelector('.main-container')
 
 let playNum = 0;
 
@@ -97,19 +99,25 @@ playNum = playNum + 1
 if (playNum <= playList.length - 1) {
     audio.src = playList[playNum][0]
     songPicture.src = playList[playNum][1]
+    background.style.backgroundImage = `url(${playList[playNum][1]})`
     artistName.textContent = playList[playNum][2]
     songName.textContent = playList[playNum][3]
 
 }  else if (playNum >= playList.length) {
     audio.src = playList[0][0]
     songPicture.src = playList[0][1]
+    background.style.backgroundImage = `url(${playList[0][1]})`
     artistName.textContent = playList[0][2]
     songName.textContent = playList[0][3]
 
     playNum = 0
 }
-PlayAudio()
 playBtn.classList.add('pause')
+audio.play()
+
+
+ 
+
 
 }
 
@@ -118,19 +126,27 @@ const playPrev = () => {
     if (playNum >= 0) {
         audio.src = playList[playNum][0]
         songPicture.src = playList[playNum][1]
+        background.style.backgroundImage = `url(${playList[playNum][1]})`
         artistName.textContent = playList[playNum][2]
         songName.textContent = playList[playNum][3]
     }  else if (playNum < 0) {
-        audio.src = playList[playList.length - 1]
+        audio.src = playList[playList.length - 1][0]
         songPicture.src = playList[playList.length - 1][1]
+        background.style.backgroundImage = `url(${playList[playList.length - 1][1]})`
         artistName.textContent = playList[playList.length - 1][2]
         songName.textContent = playList[playList.length - 1][3]
         playNum = playList.length - 1
     }
-    PlayAudio()
+
+    
     playBtn.classList.add('pause')
+    audio.play()
+
+    
     
 }
+
+
 
 
 const nextBtn = document.querySelector('.next-btn');
