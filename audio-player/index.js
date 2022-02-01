@@ -34,7 +34,7 @@ const progressBar = document.querySelector('.progress-bar');
 const timeline = document.querySelector('.timeline')
 
 const progressBarMove = () => {
- const pixels = (audio.currentTime / audio.duration) * 194
+ const pixels = (audio.currentTime / audio.duration) * 380
  progressBar.style.left = `${pixels}px`
 }
 
@@ -57,9 +57,9 @@ audio.addEventListener('ended', () => [
 
 
 const progressBarMoveByUser = (event) => {
- const currentSongMoment = (event.offsetX / timeline.offsetWidth) * audio.duration;
- audio.currentTime = currentSongMoment;     
-}
+    const currentSongMoment = (event.offsetX / timeline.offsetWidth) * audio.duration;
+    audio.currentTime = currentSongMoment;     
+   }
 
 let isMousedown = false;
 timeline.addEventListener('click', progressBarMoveByUser)
@@ -84,8 +84,10 @@ const timeInCorrectForm = (time) => {
 }
 
 
-const playList = [['assets/audio/beyonce.mp3', 'assets/img/lemonade.png', 'Beyonce', 'Don`t Hurt Yourself'], 
-                 ['assets/audio/dontstartnow.mp3', 'assets/img/dontstartnow.png', 'Dua Lipa', 'Don`t Start Now']]
+const playList = [ ['assets/audio/WalkingOnADream.mp3', 'assets/img/walkingOnADream.jpg', 'Empire Of The Sun', 'Walking On A Dream'],
+['assets/audio/TheModel.mp3', 'assets/img/theManMachine.jpg', 'Kraftwerk', 'The Model'],
+['assets/audio/BrooklynBridgeToChorus.mp3', 'assets/img/theNewAbnormal.jpg', 'The Strokes', 'Brooklyn Bridge To Chorus']]
+
 
 const songPicture = document.querySelector('.song-picture');
 const artistName = document.querySelector('.artist-name');
@@ -97,6 +99,7 @@ let playNum = 0;
 const playNext = () => {
 playNum = playNum + 1
 if (playNum <= playList.length - 1) {
+
     audio.src = playList[playNum][0]
     songPicture.src = playList[playNum][1]
     background.style.backgroundImage = `url(${playList[playNum][1]})`
@@ -104,6 +107,7 @@ if (playNum <= playList.length - 1) {
     songName.textContent = playList[playNum][3]
 
 }  else if (playNum >= playList.length) {
+
     audio.src = playList[0][0]
     songPicture.src = playList[0][1]
     background.style.backgroundImage = `url(${playList[0][1]})`
@@ -116,20 +120,19 @@ playBtn.classList.add('pause')
 audio.play()
 
 
- 
-
-
 }
 
 const playPrev = () => {
     playNum = playNum - 1
     if (playNum >= 0) {
+
         audio.src = playList[playNum][0]
         songPicture.src = playList[playNum][1]
         background.style.backgroundImage = `url(${playList[playNum][1]})`
         artistName.textContent = playList[playNum][2]
         songName.textContent = playList[playNum][3]
     }  else if (playNum < 0) {
+
         audio.src = playList[playList.length - 1][0]
         songPicture.src = playList[playList.length - 1][1]
         background.style.backgroundImage = `url(${playList[playList.length - 1][1]})`
@@ -142,8 +145,6 @@ const playPrev = () => {
     playBtn.classList.add('pause')
     audio.play()
 
-    
-    
 }
 
 
@@ -160,3 +161,4 @@ prevBtn.addEventListener('click', () => {
 
 })
 
+songDuration.textContent = timeInCorrectForm(audio.duration);
