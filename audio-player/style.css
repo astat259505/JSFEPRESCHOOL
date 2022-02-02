@@ -38,11 +38,19 @@
     
 }
 .song-picture {
+    display: block;
     width: 400px;
     height: auto;
-    padding: 30px 50px 20px;
-    border-radius: 20%;
-    box-shadow: 10px black;
+    margin: 30px 50px 20px;
+    box-shadow:  1px 0 13px 6px #402C19;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+
+.song-picture:hover {
+    transform: scale(1.03);
+    box-shadow:  1px 0 13px 6px #402C19;
 }
 
 .control-panel {
@@ -67,6 +75,11 @@
     background-size: 60px 60px;
     background-position: center center;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.play-button:hover {
+    filter: brightness(0) saturate(100%) invert(17%) sepia(75%) saturate(260%) hue-rotate(348deg) brightness(103%) contrast(105%);
 }
 
 .play-button.pause {
@@ -103,8 +116,8 @@
 
 .timeline {
     width: 400px;
-    height: 18px;
-    background: linear-gradient(to top, transparent 0px, transparent 6px, #9B9183 7px, #9B9183 11px, transparent 12px, transparent 18px);
+    height: 7px;
+    background: #9B9183;
     position: relative;
     left: 50px;
     top: 30px;
@@ -117,7 +130,7 @@
 .current-song-time {
     display: block;
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 0px;
     font-family: Open Sans;
     font-size: 21px;
@@ -126,7 +139,7 @@
 .song-duration {
     display: block;
     position: absolute;
-    top: -23px;
+    top: -30px;
     right: 0px;
     font-family: Open Sans;
     font-size: 21px;
@@ -140,7 +153,7 @@
     background-color: #402C19;
     position: absolute;
     left: 0px;
-    bottom: -1px;
+    bottom: -7px;
     border-radius: 50%;
     cursor: pointer;
     
@@ -154,6 +167,11 @@
     background-size: contain ;
     background-position: center 8px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.prev-btn:hover {
+    filter: brightness(0) saturate(100%) invert(17%) sepia(75%) saturate(260%) hue-rotate(348deg) brightness(103%) contrast(105%);
 }
 
 .next-btn {
@@ -164,5 +182,10 @@
     background-size: contain ;
     background-position: center 8px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.next-btn:hover {
+    filter: brightness(0) saturate(100%) invert(17%) sepia(75%) saturate(260%) hue-rotate(348deg) brightness(103%) contrast(105%);
 }
 

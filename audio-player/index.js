@@ -36,6 +36,7 @@ const timeline = document.querySelector('.timeline')
 const progressBarMove = () => {
  const pixels = (audio.currentTime / audio.duration) * 380
  progressBar.style.left = `${pixels}px`
+ timeline.style.background = `linear-gradient(to right, #402C19 ${pixels}px, #9B9183 ${pixels + 10}px )`
 }
 
 audio.addEventListener('timeupdate', () => {
