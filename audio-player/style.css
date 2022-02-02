@@ -1,23 +1,27 @@
+
+
 .container {
-
-}
-
-.main-container {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background-image: url(assets/img/walkingOnADream.jpg);
     background-size: cover;
     
 
 }
-
-.blur {
+.main-container {
+    height: 96vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+
+}
+
+.blur {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     backdrop-filter: blur(10px);
+    
 }
 
 
@@ -189,3 +193,66 @@
     filter: brightness(0) saturate(100%) invert(17%) sepia(75%) saturate(260%) hue-rotate(348deg) brightness(103%) contrast(105%);
 }
 
+.footer-container {
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    font-family: Open Sans;
+    font-size: 16px;
+    color: black;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+
+}
+
+
+
+.github-link-wrapper {
+    width: 250px;
+    height: 5vh;
+    padding: 13px 30px;
+
+}
+
+.rsschool-logo-wrapper {
+    width: 250px;
+    height: 4vh;
+    padding: 8px;
+    
+}
+
+.github-link {
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    transition: 0.3s;
+    
+}
+
+.github-link:hover {
+    color:#402C19;
+}
+
+.rsschool-logo {
+    width: 150px;
+    height: 2.5vh;
+    position: relative;
+    left: 100px;
+    transition: 0.3s;
+    
+}
+
+.rsschool-logo:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+    font-weight: 800;
+    
+    
+}
+
+.year {
+    padding-left: 10px;
+    
+}
