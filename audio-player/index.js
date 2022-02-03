@@ -94,6 +94,8 @@ const songPicture = document.querySelector('.song-picture');
 const artistName = document.querySelector('.artist-name');
 const songName = document.querySelector('.song-name');
 const background = document.querySelector('.container')
+const footer = document.querySelector('.footer-container')
+
 
 
 let playNum = 0;
