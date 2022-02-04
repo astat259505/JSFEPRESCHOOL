@@ -5,11 +5,20 @@ const mainContainer = document.querySelector('.main-container');
 const addDiv = (el) => {
 const div = document.createElement('div')
 div.classList.add('movie-container')
-div.textContent = `${el.original_title}`;
 mainContainer.append(div);
 
 const image = `<img class="movie-poster" src="https://image.tmdb.org/t/p/w1280${el.poster_path}" alt="poster">`
 div.insertAdjacentHTML('beforeend', image);
+
+const movieInfo = document.createElement('div')
+movieInfo.classList.add('movie-info')
+div.append(movieInfo)
+
+const movieTitle = `<h2 class="movie-title">${el.original_title}</h2>`
+movieInfo.insertAdjacentHTML('beforeend', movieTitle)
+
+const movieRate = `<span class="movie-rate">${el.vote_average}</span>`
+movieInfo.insertAdjacentHTML('beforeend', movieRate)
 }
 
 const showData = (data) => {
