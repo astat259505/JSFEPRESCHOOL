@@ -96,6 +96,12 @@ const songName = document.querySelector('.song-name');
 const background = document.querySelector('.container')
 const footer = document.querySelector('.footer-container')
 
+background.addEventListener('mousemove', () => {
+footer.classList.add('visible')
+})
+
+
+
 
 
 let playNum = 0;
@@ -166,3 +172,6 @@ prevBtn.addEventListener('click', () => {
 })
 
 songDuration.textContent = timeInCorrectForm(audio.duration);
+
+
+

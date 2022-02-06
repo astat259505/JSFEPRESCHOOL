@@ -5,6 +5,7 @@
     height: 100vh;
     background-image: url(assets/img/walkingOnADream.jpg);
     background-size: cover;
+    overflow: hidden;
     
 
 }
@@ -194,6 +195,8 @@
 }
 
 .footer-container {
+    position: relative;
+    top: 39px;
     height: 4vh;
     display: flex;
     justify-content: space-between;
@@ -202,15 +205,20 @@
     color: black;
     background: rgba(255, 255, 255, 0.5);
     overflow: hidden;
+    transition: 0.3s;
 
+}
+
+.visible {
+    top: 0;
 }
 
 
 
 .github-link-wrapper {
     width: 250px;
-    height: 5vh;
-    padding: 13px 30px;
+    height: 4vh;
+    padding: 10px 30px;
 
 }
 
