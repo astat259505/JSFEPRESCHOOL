@@ -1,4 +1,4 @@
-let url = "https://api.themoviedb.org/3/discover/movie?api_key=90b552af88cbe2df9559bf3d706e20bc&sort_by=popularity.desc&page=1"
+
 
 const mainContainer = document.querySelector('.main-container');
 
@@ -29,29 +29,21 @@ const showData = (data) => {
 
 const searchLine = document.querySelector('.search-line')
 
-let searchValue =  searchLine.value
+
+
+let url = "https://api.themoviedb.org/3/discover/movie?api_key=90b552af88cbe2df9559bf3d706e20bc&sort_by=popularity.desc&page=1"
+
+let searchValue 
+
 searchLine.addEventListener('search', () => {
-    changeUrl()
+    searchValue = searchLine.value
+    mainContainer.innerHTML = ''
+    url = `https://api.themoviedb.org/3/search/movie?api_key=90b552af88cbe2df9559bf3d706e20bc&query=${searchValue}&page=1`
+    getData()
 
 })
 
-
-const changeUrl = () => {
-    if (searchValue === undefined) {
-        url = "https://api.themoviedb.org/3/discover/movie?api_key=90b552af88cbe2df9559bf3d706e20bc&sort_by=popularity.desc&page=1"
-        
-    } else {
-        url = `https://api.themoviedb.org/3/search/movie?api_key=90b552af88cbe2df9559bf3d706e20bc&query=${searchValue}&page=1`
-        
-    }
-}
-
-changeUrl()
-
-
-
-
-
+console.log(url)
 
 
 
