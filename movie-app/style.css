@@ -1,12 +1,22 @@
+.container {
+    background-color: #101820FF;
+    color: #FEE715FF;
+    font-family: Oswald;
+}
+
 .main-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 0 25px;
+    column-gap: 30px;
 }
 
 .movie-container {
     width: 400px;
     height: 700px;
+
+    
     
 }
 
@@ -17,4 +27,96 @@
 
 .movie-info {
     display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.movie-title {
+    margin: 0;
+}
+
+.movie-rate {
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.header-container {
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.search-line {
+    -webkit-appearance: none;
+    background-color: #FEE715FF;
+    width: 300px;
+    height: 40px;
+    border: 3px solid #101820FF;
+    border-radius: 50px;
+    background-image: url(assets/svg/search.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right 10px;
+    margin-right: 35px;
+    padding: 5px 10px;
+    color: #101820FF;
+}
+
+.search-line::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-image: url(assets/svg/cross.svg);
+    background-position: center;
+    background-size: contain;
+    margin-left: 5px;
+
+}
+
+
+
+.search-line:focus {
+    border-radius: 0;
+    position: relative;
+    right: 10px;
+    background-image: none;
+    border: none;
+    outline: none;
+}
+
+.search-line:active {
+    border-radius: 0;
+    position: relative;
+    right: 10px;
+    background-image: none;
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    font-family: Oswald;
+    color:#101820FF;
+}
+
+@media (max-width: 1024px) {
+    .search-line {
+        margin-right: 55px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        justify-content: center;
+    
+    }
+
+    .search-line {
+        margin: 0 auto;
+    }
 }
