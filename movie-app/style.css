@@ -15,6 +15,7 @@
 .movie-container {
     width: 400px;
     height: 700px;
+    position: relative;
 
     
     
@@ -64,6 +65,7 @@
     margin-right: 35px;
     padding: 5px 10px;
     color: #101820FF;
+    font-family: Cardo;
 }
 
 .search-line::-webkit-search-cancel-button {
@@ -100,8 +102,27 @@
 }
 
 ::placeholder {
-    font-family: Oswald;
+    font-family: Cardo;
     color:#101820FF;
+}
+
+.slider {
+    box-sizing: border-box;
+    width: 400px;
+    height: 100px;
+    background-color: #FEE715FF;
+    position: absolute;
+    top: 500px;
+    color: #101820FF;
+    font-family: Cardo;
+    padding: 10px;
+    font-size: 20px;
+    display: none;
+
+}
+
+.show {
+    display: block;
 }
 
 @media (max-width: 1024px) {
