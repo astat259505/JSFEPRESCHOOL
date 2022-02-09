@@ -14,7 +14,7 @@ const movieInfo = document.createElement('div')
 movieInfo.classList.add('movie-info')
 div.append(movieInfo)
 
-const slider = `<div class="slider">More info...</div>`
+const slider = `<div class="slider"><h3>Overview</h3><p>${el.overview}</p></div>`
 div.insertAdjacentHTML('beforeend', slider)
 
 const movieTitle = `<h2 class="movie-title">${el.original_title}</h2>`
@@ -22,6 +22,10 @@ movieInfo.insertAdjacentHTML('beforeend', movieTitle)
 
 const movieRate = `<span class="movie-rate">${el.vote_average}</span>`
 movieInfo.insertAdjacentHTML('beforeend', movieRate)
+
+if (el.vote_average > 8) {
+    movieRate.style.color = 'green'
+}
 }
 
 const showData = (data) => {
@@ -51,19 +55,6 @@ searchLine.addEventListener('search', () => {
 })
 
 console.log(url)
-
-
-const showSlider = () => {
-const mainContainer = document.querySelector('.main-container')
-const movieContainer = document.querySelectorAll('.movie-container');
-const sliders = document.querySelectorAll('.slider');
-
-sliders.forEach(el => el.addEventListener('click', (event) => {
-    event.target.classList.toggle('show')
-})
-    
-);
-}
 
 
 
