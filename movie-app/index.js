@@ -58,14 +58,14 @@ const mainContainer = document.querySelector('.main-container')
 const movieContainer = document.querySelectorAll('.movie-container');
 const sliders = document.querySelectorAll('.slider');
 
-
-movieContainer.forEach(movie => movie.addEventListener('mouseover', (event) => {
-    sliders.forEach(slider => {
-        slider.classList.remove('show')
-        event.target.classList.add('show')})
-
-}))
+sliders.forEach(el => el.addEventListener('click', (event) => {
+    event.target.classList.toggle('show')
+})
+    
+);
 }
+
+
 
 
 
@@ -78,7 +78,6 @@ async function getData() {
     const data = await res.json();
     console.log(data)
     showData(data)
-    showSlider()
 }
 
 getData()

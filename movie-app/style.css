@@ -16,6 +16,7 @@
     width: 400px;
     height: 700px;
     position: relative;
+    overflow: hidden;
 
     
     
@@ -25,6 +26,7 @@
     width: 400px;
     height: auto;
 }
+
 
 .movie-info {
     display: flex;
@@ -111,13 +113,23 @@
     width: 400px;
     height: 100px;
     background-color: #FEE715FF;
-    position: absolute;
-    top: 500px;
     color: #101820FF;
     font-family: Cardo;
     padding: 10px;
     font-size: 20px;
-    display: none;
+    position: absolute;
+    top: 500px;
+    transform: translateX(-100%);
+    transition: 0.5s ease-out;
+    
+    
+    
+    
+
+}
+
+.movie-container:hover .slider {
+    transform: translateX(0);
 
 }
 
