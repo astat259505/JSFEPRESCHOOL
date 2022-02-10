@@ -17,15 +17,12 @@ div.append(movieInfo)
 const slider = `<div class="slider"><h3>Overview</h3><p>${el.overview}</p></div>`
 div.insertAdjacentHTML('beforeend', slider)
 
-const movieTitle = `<h2 class="movie-title">${el.original_title}</h2>`
+const movieTitle = `<h2 class="movie-title">${el.title}</h2>`
 movieInfo.insertAdjacentHTML('beforeend', movieTitle)
 
 const movieRate = `<span class="movie-rate">${el.vote_average}</span>`
 movieInfo.insertAdjacentHTML('beforeend', movieRate)
 
-if (el.vote_average > 8) {
-    movieRate.style.color = 'green'
-}
 }
 
 const showData = (data) => {
@@ -56,6 +53,33 @@ searchLine.addEventListener('search', () => {
 
 console.log(url)
 
+const changeMovieRateColor = () => {
+    const movieRate = document.querySelectorAll('.movie-rate')
+    movieRate.forEach(el => {
+        if (el.innerHTML > 7) {
+            el.classList.add('green')
+        } if (el.innerHTML >= 5 && el.innerHTML <= 7) {
+            el.classList.add('grey')
+        } if (el.innerHTML < 5) {
+            el.classList.add('red')
+        } if (el.innerHTML == 0) {
+            el.innerHTML = ''
+        }
+    })
+
+}
+
+const noImageAvailable = () => {
+    const poster = document.querySelectorAll('.movie-poster')
+    poster.forEach(el => {
+        if (el.src == 'https://image.tmdb.org/t/p/w1280null') {
+            el.src = 'assets/img/no-image.jpg'
+            el.classList.add('no-image')
+        }
+})
+}
+
+
 
 
 
@@ -69,6 +93,8 @@ async function getData() {
     const data = await res.json();
     console.log(data)
     showData(data)
+    changeMovieRateColor()
+    noImageAvailable()
 }
 
 getData()

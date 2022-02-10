@@ -139,6 +139,25 @@
     display: block;
 }
 
+.red {
+    color: red;
+}
+
+.grey {
+    color: #777
+}
+
+.green {
+    color: #3bb33b;
+}
+
+.no-image {
+    height: 600px;
+    width: auto;
+    position: relative;
+    right: 100px;
+}
+
 @media (max-width: 1024px) {
     .search-line {
         margin-right: 55px;
