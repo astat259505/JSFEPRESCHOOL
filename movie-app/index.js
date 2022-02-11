@@ -2,6 +2,7 @@
 
 const mainContainer = document.querySelector('.main-container');
 
+
 const addDiv = (el) => {
 const div = document.createElement('div')
 div.classList.add('movie-container')
@@ -37,7 +38,7 @@ const searchLine = document.querySelector('.search-line')
 
 let url = "https://api.themoviedb.org/3/discover/movie?api_key=90b552af88cbe2df9559bf3d706e20bc&sort_by=popularity.desc&page=1"
 
-let searchValue 
+let searchValue = searchLine.value
 
 searchLine.addEventListener('search', () => {
     searchValue = searchLine.value
@@ -78,9 +79,6 @@ const noImageAvailable = () => {
         }
 })
 }
-
-
-
 
 
 
