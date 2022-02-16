@@ -1,5 +1,5 @@
 .main-container {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: white;
     display: flex;
@@ -8,14 +8,21 @@
 
 }
 
+.game-info {
+    width: 600px;
+    height: 600px;
+    order: 2
+}
+
 .field {
     width: 600px;
     height: 600px;
     display: flex;
     flex-wrap: wrap;
-    border: solid 5px black;
 
 }
+
+
 
 .square {
     box-sizing: border-box;
