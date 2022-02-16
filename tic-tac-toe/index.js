@@ -3,6 +3,7 @@ const playingField = document.querySelector('.field');
 let result = ''
 const squares = document.querySelectorAll('.square')
 const actualResult = document.querySelector('.actual-result')
+let gameStatistic = []
 
 const showSign = () => {
     playingField.addEventListener('click', (event) => {
@@ -10,10 +11,19 @@ const showSign = () => {
      move++
      determineTheWinner()
      showActualResult(move, result)
+     recordGameResults()
             
 })
 
 
+}
+
+console.log(gameStatistic)
+
+const recordGameResults = () => {
+    if (result != '') {
+   gameStatistic.length <= 9 ? gameStatistic.push(result) : gameStatistic.shift() & gameStatistic.push(result)
+    }
 }
 
 
@@ -53,5 +63,20 @@ const showActualResult = (move, result) => {
 
 
 }
+
+const setLocalStorage = () => {   
+    localStorage.setItem('gameStatistic', JSON.stringify(gameStatistic))
+}
+
+window.addEventListener('beforeunload', setLocalStorage)
+
+
+const getLocalStorage = () => {
+    
+    gameStatistic = JSON.parse(localStorage.getItem('gameStatistic'))
+    
+}
+
+window.addEventListener('load', getLocalStorage)
 
 showSign()
