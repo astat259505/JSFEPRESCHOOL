@@ -30,3 +30,8 @@
     height: 200px;
     border: solid 5px black;
 }
+
+.statistics-item {
+    height: 50px;
+    width: 400px;
+}
