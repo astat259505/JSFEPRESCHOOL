@@ -13,10 +13,12 @@ const gameProcess = () => {
         square.addEventListener('click', (event) => {
         if (move % 2 == 0) {
              event.target.innerHTML = 'X'
+             event.target.classList.add('x-click-animation')
              move++
              event.target.style.pointerEvents = 'none'
         } else {
             event.target.innerHTML = '0'
+            event.target.classList.add('o-click-animation')
              move++
              event.target.style.pointerEvents = 'none'
         }
