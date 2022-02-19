@@ -5,6 +5,8 @@ const squares = document.querySelectorAll('.square')
 const actualResult = document.querySelector('.actual-result')
 let gameStatistic = []
 const statistics = document.querySelectorAll('.statistics-item')
+const restartBtn = document.querySelector('.restart')
+const field = document.querySelector('.field')
 
 const gameProcess = () => {
     squares.forEach(square => {
@@ -37,7 +39,7 @@ console.log(gameStatistic)
 
 const recordGameResults = () => {
     if (result != '') {
-   gameStatistic.length <= 9 ? gameStatistic.push(result) : gameStatistic.shift() & gameStatistic.push(result)
+   gameStatistic.length <= 9 ? gameStatistic.push(actualResult.innerHTML) : gameStatistic.shift() & gameStatistic.push(actualResult.innerHTML)
     }
 }
 
@@ -60,12 +62,14 @@ console.log(winConditions[0][0])
 
 const determineTheWinner = () => {
 
-        for (i = 0; i < winConditions.length; i++){
+        for (i = 0; i < winConditions.length; ++i){
             if ((squares[winConditions[i][0]].innerHTML == 'X') && (squares[winConditions[i][1]].innerHTML == 'X') && (squares[winConditions[i][2]].innerHTML == 'X')) {
                 result = 'X won'
+                
             } if (squares[winConditions[i][0]].innerHTML == '0' && squares[winConditions[i][1]].innerHTML == '0' && squares[winConditions[i][2]].innerHTML == '0') {
                 result = '0 won'
-            } if (move == 9) {
+                
+            } if (move == 9 && result == '') {
                 result = 'Draw'
             }
         }
@@ -73,8 +77,11 @@ const determineTheWinner = () => {
 
 const showActualResult = (move, result) => {
     if (result != '') {
-        actualResult.innerHTML = `${result} ${move} turn`
-    } else {
+        actualResult.innerHTML = `${result} - ${move} turn!`
+    } if (result == 'Draw') {
+        actualResult.innerHTML = `${result}!`
+    
+    } if (result == '') {
         actualResult.innerHTML = `${move+1} turn`
     }
 
@@ -101,7 +108,7 @@ gameProcess()
 
 const showGameStatistic = () => {
   statistics.forEach((item, index) => {
-      item.innerHTML = `${gameStatistic[index]}`
+      item.innerHTML = `${index+1}. ${gameStatistic[index]}`
   })
 }
 
@@ -112,3 +119,8 @@ const banClickAfterResult = () => {
     }
 })
 }
+
+
+restartBtn.addEventListener('click', () => {
+    location.reload()
+})

@@ -1,22 +1,40 @@
+:root {
+    --main-color: #F7F7F7;
+    --second-color: #7DA2A9;
+    --white: white;
+}
+
 .main-container {
     width: 100vw;
-    height: 100vh;
-    background-color: white;
+    height: 96vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: var(--main-color);
 
 }
 
 .game-info {
-    width: 600px;
-    height: 600px;
-    order: 2
+    width: 400px;
+    height: 700px;
+}
+.game-info-title {
+    box-sizing: border-box;
+    height: 100px;
+    font-family: Lato;
+    color: var(--second-color);
+    font-size: 36px;
+    
+    padding: 30px 0 0 30px;
+    
 }
 
 .field {
+    box-sizing: border-box;
     width: 600px;
-    height: 600px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
 
@@ -28,10 +46,106 @@
     box-sizing: border-box;
     width: 200px;
     height: 200px;
-    border: solid 5px black;
+    font-family: Lato;
+    color: var(--second-color);
+    font-size: 150px;
+    font-weight: 300;
+    text-align: center;
+    padding: 5px 20px 20px;
+    cursor: pointer;
+}
+
+.field :nth-child(2),
+       :nth-child(3),
+       :nth-child(4),
+       :nth-child(5),
+       :nth-child(6),
+       :nth-child(7) {
+    border-bottom: 5px solid var(--second-color);
+       }
+
+.field :nth-child(2),
+       :nth-child(3),
+       :nth-child(5),
+       :nth-child(6),
+       :nth-child(8),
+       :nth-child(9) {
+
+       border-right: 5px solid var(--second-color);
 }
 
 .statistics-item {
+    height: 60px;
+    width: 300px;
+    border: none;
+    font-family: Lato;
+    color: var(--second-color);
+    font-size: 32px;
+    
+}
+
+.actual-result {
+    justify-self: flex-start;
+    width: 100%;
+    height: 100px;
+    font-family: Lato;
+    color: var(--second-color);
+    font-size: 48px;
+    text-align: center;
+}
+
+.btn-wrapper {
+    width: 600px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart {
+    position: relative;
+    font-family: Lato;
+    color: var(--main-color);
+    background-color: var(--second-color);
+    border: none;
+    width: 220px;
     height: 50px;
-    width: 400px;
+    font-size: 36px;
+    cursor: pointer;
+    overflow: hidden;
+    border: solid 2px var(--main-color);
+    z-index: 1;
+    
+}
+
+.restart:hover {
+    color: var(--second-color);
+    border: solid 2px var(--second-color);
+    transition: all 0.3s ease-out;
+    
+}
+
+.restart::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: -20%;
+    left: -20%;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease-out;
+    background-color: var(--main-color);
+    z-index: -1;
+    
+    
+}
+
+.restart:hover::after {
+    transform: skewX(-45deg) scale(1, 1);
+    transition: all 0.3s ease-out;
+    
+
+    
+
+
 }

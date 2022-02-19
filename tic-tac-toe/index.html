@@ -7,12 +7,15 @@
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
         <div class="container main-container">
             <div class="game-info">
-                <div class="actual-result">1 turn</div>
+                <div class="game-info-title">Last results</div>
                 <div class="statistics">
                     <div class="statistics-item"></div>
                     <div class="statistics-item"></div>
@@ -27,6 +30,7 @@
                 </div>
             </div>
             <div class="field">
+                <div class="actual-result">1 turn</div>
                 <div class="square"></div>
                 <div class="square"></div>
                 <div class="square"></div>
@@ -36,6 +40,9 @@
                 <div class="square"></div>
                 <div class="square"></div>
                 <div class="square"></div>
+                <div class="btn-wrapper">
+                <button class="restart">New Game</button>
+               </div>
             </div>
         </div>
     </main>
