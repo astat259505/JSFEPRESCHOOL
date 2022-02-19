@@ -3,7 +3,7 @@ const playingField = document.querySelector('.field');
 let result = ''
 const squares = document.querySelectorAll('.square')
 const actualResult = document.querySelector('.actual-result')
-let gameStatistic = []
+const gameStatistic = []
 const statistics = document.querySelectorAll('.statistics-item')
 const restartBtn = document.querySelector('.restart')
 const field = document.querySelector('.field')
@@ -29,6 +29,7 @@ const gameProcess = () => {
      recordGameResults()
      showGameStatistic()
      
+     
             
 })
     })
@@ -40,9 +41,11 @@ const gameProcess = () => {
 console.log(gameStatistic)
 
 const recordGameResults = () => {
-    if (result != '') {
+    if ((result != '')) {
+
    gameStatistic.length <= 9 ? gameStatistic.push(actualResult.innerHTML) : gameStatistic.shift() & gameStatistic.push(actualResult.innerHTML)
     }
+    
 }
 
 
@@ -99,8 +102,11 @@ window.addEventListener('beforeunload', setLocalStorage)
 
 const getLocalStorage = () => {
     
-    gameStatistic = JSON.parse(localStorage.getItem('gameStatistic'))
+    let savedStatistic = JSON.parse(localStorage.getItem('gameStatistic'))
+    gameStatistic.push(...savedStatistic)
     showGameStatistic()
+
+    
     
 }
 
@@ -108,9 +114,12 @@ window.addEventListener('load', getLocalStorage)
 
 gameProcess()
 
+
 const showGameStatistic = () => {
   statistics.forEach((item, index) => {
+      if (gameStatistic[index]) {
       item.innerHTML = `${index+1}. ${gameStatistic[index]}`
+      }
   })
 }
 
@@ -126,3 +135,4 @@ const banClickAfterResult = () => {
 restartBtn.addEventListener('click', () => {
     location.reload()
 })
+
