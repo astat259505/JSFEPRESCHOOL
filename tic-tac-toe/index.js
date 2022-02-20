@@ -43,7 +43,7 @@ console.log(gameStatistic)
 const recordGameResults = () => {
     if ((result != '')) {
 
-   gameStatistic.length <= 9 ? gameStatistic.push(actualResult.innerHTML) : gameStatistic.shift() & gameStatistic.push(actualResult.innerHTML)
+   gameStatistic.length <= 9 ? gameStatistic.unshift(actualResult.innerHTML) : gameStatistic.pop() & gameStatistic.unshift(actualResult.innerHTML)
     }
     
 }
