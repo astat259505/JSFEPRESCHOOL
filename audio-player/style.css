@@ -1,0 +1,266 @@
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/img/walkingOnADream.jpg);
+    background-size: cover;
+    overflow: hidden;
+    
+
+}
+.main-container {
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.blur {
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    
+}
+
+
+
+.audio-player {
+    width: 500px;
+    height: 550px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10%;
+
+
+}
+
+
+.song-picture-wrapper {
+    height: 280px;
+    overflow: hidden;
+    
+}
+.song-picture {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: 30px 50px 20px;
+    box-shadow:  1px 0 13px 6px #402C19;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+
+.song-picture:hover {
+    transform: scale(1.03);
+    box-shadow:  1px 0 13px 6px #402C19;
+}
+
+.control-panel {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.control-buttons {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 100px 0;
+}
+
+.play-button {
+    width: 100px;
+    height: 60px;
+    background-image: url(assets/svg/play.svg);
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    background-position: center center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.play-button:hover {
+    filter: brightness(0) saturate(100%) invert(17%) sepia(75%) saturate(260%) hue-rotate(348deg) brightness(103%) contrast(105%);
+}
+
+.play-button.pause {
+    background-image: url(assets/svg/pause.svg);
+    cursor: pointer;
+}
+
+.song-data {
+    width: 500px;
+    height: 60px;
+    padding: 20px 50px 20px;
+}
+
+.artist-name {
+    font-family: Open Sans Light;
+    font-size: 21px;
+    padding-top: 10px;
+    color: #333333;
+
+}
+
+.song-name {
+    font-family: Open Sans;
+    font-size: 28px;
+    color: #333333;
+}
+
+
+
+.timeline-wrapper {
+    width: 100%;
+    height: 70px;
+}
+
+.timeline {
+    width: 400px;
+    height: 7px;
+    background: #9B9183;
+    position: relative;
+    left: 50px;
+    top: 30px;
+    cursor: pointer;
+
+    
+    
+}
+
+.current-song-time {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    font-family: Open Sans;
+    font-size: 21px;
+}
+
+.song-duration {
+    display: block;
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    font-family: Open Sans;
+    font-size: 21px;
+    width: 45px;
+    height: 25px;
+}
+
+.progress-bar {
+    width: 20px;
+    height: 20px;
+    background-color: #402C19;
+    position: absolute;
+    left: 0px;
+    bottom: -7px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.prev-btn {
+    width: 40px;
+    height: 100px;
+    background-image: url(assets/svg/back.svg);
+    background-repeat: no-repeat;
+    background-size: contain ;
+    background-position: center 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.prev-btn:hover {
+    filter: brightness(0) saturate(100%) invert(17%) sepia(75%) saturate(260%) hue-rotate(348deg) brightness(103%) contrast(105%);
+}
+
+.next-btn {
+    width: 40px;
+    height: 100px;
+    background-image: url(assets/svg/next.svg);
+    background-repeat: no-repeat;
+    background-size: contain ;
+    background-position: center 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.next-btn:hover {
+    filter: brightness(0) saturate(100%) invert(17%) sepia(75%) saturate(260%) hue-rotate(348deg) brightness(103%) contrast(105%);
+}
+
+.footer-container {
+    position: relative;
+    top: 39px;
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    font-family: Open Sans;
+    font-size: 16px;
+    color: black;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+
+.visible {
+    top: 0;
+}
+
+
+
+.github-link-wrapper {
+    width: 250px;
+    height: 4vh;
+    padding: 10px 30px;
+
+}
+
+.rsschool-logo-wrapper {
+    width: 250px;
+    height: 4vh;
+    padding: 8px;
+    
+}
+
+.github-link {
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    transition: 0.3s;
+    
+}
+
+.github-link:hover {
+    color:#402C19;
+}
+
+.rsschool-logo {
+    width: 150px;
+    height: 2.5vh;
+    position: relative;
+    left: 100px;
+    transition: 0.3s;
+    
+}
+
+.rsschool-logo:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+    font-weight: 800;
+    
+    
+}
+
+.year {
+    padding-left: 10px;
+    
+}
