@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#skills" class="nav-link" data-i18n="skills">Skills</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link" data-i18n="portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a href="#video" class="nav-link" data-i18n="video">Video</a></li>
+                    <li class="nav-item"><a href="#price" class="nav-link" data-i18n="price">Price</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link" data-i18n="contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <div class="english active-lng">en</div>
+                <div class="slash">/</div>   
+                <div class="russian">ru</div>
+            </div>
+            <div class="hamburger">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <div class="theme-switch"></div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <section class="section hero-container">
+                <div class="hero-content">
+                <h1 class="hero-container-title" data-i18n="hero-title">Alexa Rise</h1>
+                <p class="hero-container-text" data-i18n="hero-text">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
+                <div class="button-container">
+                    <button class="button-one hero-button" data-i18n="hire">Hire me</button>
+                </div>
+                </div>
+            </section>
+            <section class="section skills-container" id="skills">
+                <div class="section-title-container">
+                <h2 class="section-title-skills" data-i18n="skills">Skills</h2>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skills-image skills-image-one"></div>
+                        <div class="skills-title" data-i18n="skill-title-1">Digital photography</div>
+                        <div class="skills-text" data-i18n="skill-text-1">High-quality photos in the studio and on the nature</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skills-image skills-image-two"></div>
+                        <div class="skills-title" data-i18n="skill-title-2">Video shooting</div>
+                        <div class="skills-text" data-i18n="skill-text-2">Capture your moments so that they always stay with you</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skills-image skills-image-three"></div>
+                        <div class="skills-title" data-i18n="skill-title-3">Retouch</div>
+                        <div class="skills-text" data-i18n="skill-text-3">I strive to make photography surpass reality</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skills-image skills-image-four"></div>
+                        <div class="skills-title" data-i18n="skill-title-4">Audio</div>
+                        <div class="skills-text" data-i18n="skill-text-4">Professional sounds recording for video, advertising, portfolio</div>
+                    </div>
+                </div>  
+            </section>
+            <section class="section portfolio-container" id="portfolio">
+                <div class="section-title-container">
+                <h2 class="section-title-portfolio" data-i18n="portfolio">Portfolio</h2>
+                </div>
+                <div class="portfolio-buttons">
+                    <button class="button-two portfolio-button winter-button" data-season="winter" data-i18n="winter">Winter</button>
+                    <button class="button-two portfolio-button spring-button" data-season="spring" data-i18n="spring">Spring</button>
+                    <button class="button-two portfolio-button summer-button" data-season="summer" data-i18n="summer">Summer</button>
+                    <button class="button-two portfolio-button autumn-button active" data-season="autumn" data-i18n="autumn">Autumn</button>
+                </div>
+                <div class="portfolio-images">
+                    <img src="./assets/img/autumn/1.jpg" alt="portfolio-image" class="portfolio-image">
+                    <img src="assets/img/autumn/2.jpg" alt="portfolio-image" class="portfolio-image">
+                    <img src="assets/img/autumn/3.jpg" alt="portfolio-image" class="portfolio-image">
+                    <img src="assets/img/autumn/4.jpg" alt="portfolio-image" class="portfolio-image">
+                    <img src="assets/img/autumn/5.jpg" alt="portfolio-image" class="portfolio-image">
+                    <img src="assets/img/autumn/6.jpg" alt="portfolio-image" class="portfolio-image">
+                </div>
+            </section>
+            <section class="section video-container" id="video">
+                <div class="section-title-container">
+                <h2 class="section-title-video" data-i18n="video">Video</h2>
+                </div>
+                <div class="video-player">
+                    <button class="play-button"></button>
+                </div>
+            </section>
+            <section class="section price-container" id="price">
+                <div class="section-title-container">
+                <h2 class="section-title-price" data-i18n="price">Price</h2>
+                </div>
+                <div class="price-items">
+                    <div class="price-item">
+                        <span class="sub">Standard</span>
+                        <span class="price">500 $</span>
+                        <span class="sub-description">
+                            <span class="price-description" data-i18n="price-description-1-span-1">One location</span>
+                            <span class="price-description" data-i18n="price-description-1-span-2">120 photos in color</span>
+                            <span class="price-description" data-i18n="price-description-1-span-3">12 photos in retouch</span>
+                            <span class="price-description" data-i18n="price-description-1-span-4">Readiness 2-3 weeks</span>
+                            <span class="price-description" data-i18n="price-description-1-span-5">Make up, visage</span></span>
+                        <span class="price-button"><button class="button-one" data-i18n="order">Order shooting</button></span>
+                    </div>
+                    <div class="price-item">
+                        <span class="sub">Premium</span>
+                        <span class="price">700 $</span>
+                        <span class="sub-description">
+                            <span class="price-description" data-i18n="price-description-2-span-1">One or two locations</span>
+                            <span class="price-description" data-i18n="price-description-2-span-2">200 photos in color</span>
+                            <span class="price-description" data-i18n="price-description-2-span-3">20 photos in retouch</span>
+                            <span class="price-description" data-i18n="price-description-2-span-4">Readiness 1-2 weeks</span>
+                            <span class="price-description" data-i18n="price-description-2-span-5">Make up, visage</span>
+                        </span>
+                        <span class="price-button"><button class="button-one" data-i18n="order">Order shooting</button></span>
+                    </div>
+                    <div class="price-item">
+                        <span class="sub">Gold</span>
+                        <span class="price">1000 $</span>
+                        <span class="sub-description">
+                            <span class="price-description" data-i18n="price-description-3-span-1">Three locations or more</span>
+                            <span class="price-description" data-i18n="price-description-3-span-2">300 photos in color</span>
+                            <span class="price-description" data-i18n="price-description-3-span-3">50 photos in retouch</span>
+                            <span class="price-description" data-i18n="price-description-3-span-4">Readiness 1 week</span>
+                            <span class="price-description" data-i18n="price-description-3-span-5">Make up, visage, hairstyle</span>
+                        </span>
+                        <span class="price-button"><button class="button-one" data-i18n="order">Order shooting</button></span>
+                    </div>
+                </div>
+            </section>
+            <section class="section contact-container" id="contacts">
+            <div class="input-forms-container">
+                <h2 class="contacts-title" data-i18n="contact-me">Contact me</h2>
+                <div class="input-form-container"><input type="email" class="input-form" placeholder="E-mail"></div>
+                <div class="input-form-container"><input type="tel" class="input-form" placeholder="Phone"></div>
+                <div class="textarea-container"><textarea class="textarea" placeholder="Message"></textarea></div>
+                <button class="button-one contact-button" data-i18n="send-message">Send message</button>
+            </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-item footer-data"><span class="copyright">&copy;</span><span class="year">2022</span><a href="https://github.com/astat259505" class="github-link" target="_blank">github</a></div>
+            <div class="footer-item rsschool"><a href="https://rs.school/js-stage0/" class="rsschool-link" target="_blank">Rolling Scopes School</a></div>
+            <div class="footer-item social-list"><ul class="footer-links">
+                <li class="link-name instagram"><a href="https://www.instagram.com/" class="footer-link" target="_blank">  
+                  <svg class="instagram-icon footer-icon">
+                    <use xlink:href="./assets/svg/sprite.svg#instagram"></use>
+                  </svg></a></li>
+                <li class="link-name facebook"><a href="https://www.facebook.com/" class="footer-link" target="_blank">                  
+                    <svg class="facebook-icon footer-icon">
+                    <use xlink:href="./assets/svg/sprite.svg#facebook"></use>
+                  </svg></a></li>
+                <li class="link-name twitter"><a href="https://twitter.com/" class="footer-link" target="_blank">
+                    <svg class="twitter-icon footer-icon">
+                    <use xlink:href="./assets/svg/sprite.svg#twitter"></use>
+                  </svg></a></li>
+                <li class="link-name pinterest"><a href="https://www.pinterest.com" class="footer-link" target="_blank">
+                    <svg class="pinterest-icon footer-icon">
+                    <use xlink:href="./assets/svg/sprite.svg#pinterest"></use>
+                  </svg></a></li>
+            </ul></div>
+        </div>
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>
