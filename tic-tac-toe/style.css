@@ -1,0 +1,227 @@
+:root {
+    --main-color: #F7F7F7;
+    --second-color: #7DA2A9;
+    --white: white;
+}
+
+.container {
+    overflow-y: hidden;
+}
+
+.main-container {
+    width: 100vw;
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: var(--main-color);
+    border: none;
+    overflow-y: hidden;
+
+}
+
+.game-info {
+    width: 400px;
+    height: 700px;
+    border: none;
+}
+.game-info-title {
+    box-sizing: border-box;
+    height: 100px;
+    font-family: Lato;
+    color: var(--second-color);
+    font-size: 36px;
+    
+    padding: 30px 0 0 30px;
+    
+}
+
+.field {
+    box-sizing: border-box;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+.square {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    font-family: Lato;
+    color: var(--second-color);
+    font-size: 150px;
+    font-weight: 300;
+    text-align: center;
+    padding: 5px 20px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.square-one,
+.square-two,
+.square-three,
+.square-four,
+.square-five,
+.square-six {
+    border-bottom: 5px solid var(--second-color);
+       }
+.square-one,
+.square-two,
+.square-four,
+.square-five,
+.square-eight,
+.square-seven {
+
+       border-right: 5px solid var(--second-color);
+}
+
+.statistics-item {
+    height: 60px;
+    width: 300px;
+    border: none;
+    font-family: Lato;
+    color: var(--second-color);
+    font-size: 32px;
+    
+}
+
+.actual-result {
+    justify-self: flex-start;
+    width: 100%;
+    height: 100px;
+    font-family: Lato;
+    color: var(--second-color);
+    font-size: 48px;
+    text-align: center;
+    border: none;
+}
+
+.btn-wrapper {
+    width: 600px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart {
+    position: relative;
+    font-family: Lato;
+    color: var(--main-color);
+    background-color: var(--second-color);
+    border: none;
+    width: 220px;
+    height: 50px;
+    font-size: 36px;
+    cursor: pointer;
+    overflow: hidden;
+    border: solid 2px var(--main-color);
+    z-index: 1;
+    
+}
+
+.restart:hover {
+    color: var(--second-color);
+    border: solid 2px var(--second-color);
+    transition: all 0.3s ease-out;
+    
+}
+
+.restart::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: -20%;
+    left: -20%;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease-out;
+    background-color: var(--main-color);
+    z-index: -1;
+    
+    
+}
+
+.restart:hover::after {
+    transform: skewX(-45deg) scale(1, 1);
+    transition: all 0.3s ease-out;
+
+}
+
+.x-click-animation {
+    background-color: #FAEBEFFF;
+}
+
+.o-click-animation {
+    background-color: #E1F2F7;
+}
+
+.footer-container {
+    position: relative;
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    font-family: Lato;
+    font-size: 16px;
+    color: var(--second-color);
+    background: var(--main-color);
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+
+
+
+.github-link-wrapper {
+    width: 250px;
+    height: 4vh;
+    padding: 10px 30px;
+
+}
+
+.rsschool-logo-wrapper {
+    width: 250px;
+    height: 4vh;
+    padding: 8px;
+    
+}
+
+.github-link {
+    text-decoration: none;
+    color: var(--second-color);
+    border: none;
+    padding-left: 10px;
+    transition: 0.3s;
+    
+}
+
+
+.rsschool-logo {
+    width: 150px;
+    height: 2.5vh;
+    position: relative;
+    left: 100px;
+    transition: 0.3s;
+    
+}
+
+.rsschool-logo:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+    font-weight: 800;
+    
+    
+}
+
+.year {
+    padding-left: 10px;
+    
+}
