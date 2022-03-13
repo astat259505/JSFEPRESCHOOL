@@ -1,4 +1,4 @@
-## https://rolling-scopes-school.github.io/astat259505-JSFEPRESCHOOL/portfolio/
-## https://rolling-scopes-school.github.io/astat259505-JSFEPRESCHOOL/audio-player/
-## https://rolling-scopes-school.github.io/astat259505-JSFEPRESCHOOL/movie-app/
-## https://rolling-scopes-school.github.io/astat259505-JSFEPRESCHOOL/tic-tac-toe/
+## https://astat259505.github.io/JSFEPRESCHOOL/portfolio/
+## https://astat259505.github.io/JSFEPRESCHOOL/audio-player/
+## https://astat259505.github.io/JSFEPRESCHOOL/movie-app/
+## https://astat259505.github.io/JSFEPRESCHOOL/tic-tac-toe/
