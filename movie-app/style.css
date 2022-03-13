@@ -1,0 +1,244 @@
+.container {
+    background-color: #101820FF;
+    color: #FEE715FF;
+    font-family: Oswald;
+}
+
+
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 25px;
+    column-gap: 30px;
+}
+
+.main {
+    background-color: #101820FF;
+    min-height: 91vh;
+}
+
+.movie-container {
+    width: 400px;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+
+    
+    
+}
+
+.movie-poster {
+    width: 400px;
+    height: auto;
+}
+
+
+.movie-info {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.movie-title {
+    margin: 0;
+}
+
+.movie-rate {
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.header-container {
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.search-line {
+    -webkit-appearance: none;
+    background-color: #FEE715FF;
+    width: 300px;
+    height: 40px;
+    border: 3px solid #101820FF;
+    border-radius: 50px;
+    background-image: url(assets/svg/search.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right 10px;
+    margin-right: 35px;
+    padding: 5px 10px;
+    color: #101820FF;
+    font-family: Cardo;
+}
+
+.search-line::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-image: url(assets/svg/cross.svg);
+    background-position: center;
+    background-size: contain;
+    margin-left: 5px;
+
+}
+
+
+
+.search-line:focus {
+    border-radius: 0;
+    position: relative;
+    right: 10px;
+    background-image: none;
+    border: none;
+    outline: none;
+}
+
+.search-line:active {
+    border-radius: 0;
+    position: relative;
+    right: 10px;
+    background-image: none;
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    font-family: Cardo;
+    color:#101820FF;
+}
+
+.slider {
+    box-sizing: border-box;
+    width: 400px;
+    max-height: 600px;
+    background-color: #FEE715FF;
+    color: #101820FF;
+    font-family: Cardo;
+    padding: 10px;
+    font-size: 20px;
+    position: absolute;
+    transition: 0.5s ease-out;
+    transform: translateX(-100%);
+    bottom: 100px;
+    
+    
+    
+    
+    
+
+}
+
+.movie-container:hover .slider {
+    transform: translateX(0);
+    
+
+}
+
+.show {
+    display: block;
+}
+
+.red {
+    color: red;
+}
+
+.grey {
+    color: #777
+}
+
+.green {
+    color: #3bb33b;
+}
+
+.no-image {
+    height: 600px;
+    width: auto;
+    position: relative;
+    right: 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    background-color: #FEE715FF;
+    box-shadow: 0 -1px 15px #FEE715FF;
+}
+
+
+.github-link-wrapper {
+    width: 250px;
+    padding: 12px 40px 20px;
+    color: black;
+    font-family: Cardo;
+    font-weight: bold;
+
+}
+
+.rsschool-logo-wrapper {
+    width: 250px;
+    padding: 8px 30px 20px;
+    
+    
+}
+
+.github-link {
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    transition: 0.3s;
+    
+}
+
+.github-link:hover {
+    transform: scale(1.1);
+}
+
+.rsschool-logo {
+    width: 150px;
+    height: 2.5vh;
+    position: relative;
+    left: 100px;
+    transition: 0.3s;
+    
+}
+
+.rsschool-logo:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+    font-weight: 800;
+    
+    
+}
+
+.year {
+    padding-left: 10px;
+    
+}
+
+@media (max-width: 1024px) {
+    .search-line {
+        margin-right: 55px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        justify-content: center;
+    
+    }
+
+    .search-line {
+        margin: 0 auto;
+    }
+}
